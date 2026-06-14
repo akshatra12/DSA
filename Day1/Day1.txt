@@ -1,0 +1,190 @@
+Learn How to Think Logically
+Goal
+
+By the end of today, you should be able to:
+
+Understand inputs and outputs
+Break a problem into steps
+Write simple Python code using variables, conditions, and loops
+
+Time Required: 60–90 minutes
+
+Part 1: Understand Variables (10 min)
+
+Run these examples:
+
+
+name = "Akshatra"
+age = 23
+
+print(name)
+print(age)
+
+Output:
+
+Akshatra
+23
+Task 1
+
+Create variables for:
+
+Your name
+Your college
+Your branch
+
+Print all three.
+
+Part 2: Learn Input (10 min)
+name = input("Enter your name: ")
+
+print("Hello", name)
+Task 2
+
+Take input:
+
+Name
+Age
+
+Output:
+
+Hello Akshatra
+Your age is 23
+Part 3: Logic Building with Conditions (15 min)
+Problem 1
+
+Take a number and check whether it is positive or negative.
+
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Positive")
+else:
+    print("Negative")
+Task 3
+
+Modify it to handle:
+
+Positive
+Negative
+Zero
+
+Hint:
+
+if num > 0:
+elif num < 0:
+else:
+Part 4: Learn Loops (15 min)
+
+Print numbers from 1 to 10.
+
+for i in range(1,11):
+    print(i)
+Task 4
+
+Print:
+
+1
+2
+3
+4
+5
+Part 5: First Logic Problem (20 min)
+Find the Larger Number
+
+Take two numbers.
+
+Input:
+
+10
+20
+
+Output:
+
+20 is larger
+Think Before Coding
+
+Ask yourself:
+
+What are the inputs?
+Two numbers
+What is the output?
+Larger number
+How do humans solve it?
+Compare both numbers
+
+Now code:
+
+a = int(input())
+b = int(input())
+
+if a > b:
+    print(a, "is larger")
+else:
+    print(b, "is larger")
+Part 6: Brainstorming Exercise
+
+Don't code immediately.
+
+Problem:
+
+Find the largest among 3 numbers.
+
+Example:
+
+5 8 3
+
+Output:
+
+8
+First write in English:
+
+Example:
+
+1. Take three numbers.
+2. Assume first number is largest.
+3. Compare with second.
+4. Compare with third.
+5. Print largest.
+
+Only after writing steps should you code.
+
+This habit is what builds logic.
+
+Homework (Must Do)
+Easy
+Check even or odd
+Check positive/negative/zero
+Find larger of two numbers
+Find largest of three numbers
+Medium
+Print 1 to 20
+Print even numbers from 1 to 20
+Print odd numbers from 1 to 20
+Brain Exercise
+
+Before writing code, write the algorithm in English.
+
+Example:
+
+Problem: Even or Odd
+
+Step 1: Take a number.
+Step 2: Divide by 2.
+Step 3: Check remainder.
+Step 4: If remainder is 0, even.
+Step 5: Otherwise odd.
+One rule for your DSA journey
+
+For every problem:
+
+Understand Problem
+↓
+Solve Manually
+↓
+Write Steps in English
+↓
+Convert to Python
+↓
+Test
+
+Don't look at solutions for at least 15 minutes when you're stuck. Struggling is where logic building happens.
