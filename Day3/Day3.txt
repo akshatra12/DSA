@@ -1,0 +1,43 @@
+Day 3 (Logic Building Level Up)
+
+Try these yourself.
+
+Q1. Count Even Numbers from 1 to 20
+
+Expected Output:
+
+10
+Q2. Count Odd Numbers from 1 to 20
+
+Expected Output:
+
+10
+Q3. Find Sum of Even Numbers from 1 to 20
+
+Expected Output:
+
+110
+Q4. Find Factorial
+
+Input:
+
+5
+
+Output:
+
+120
+
+Because:
+
+5 × 4 × 3 × 2 × 1 = 120
+Q5. Reverse a Number
+
+Input:
+
+1234
+
+Output:
+
+4321
+
+⚠️ Don't search the solution. Spend at least 15–20 minutes thinking.

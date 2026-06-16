@@ -1,0 +1,57 @@
+Day 2 Challenge (Slightly Harder)
+
+Try these without looking up solutions.
+
+Q1. Sum of Two Numbers
+
+Input:
+
+10
+20
+
+Output:
+
+30
+
+Q2. Find Whether a Number is Divisible by 5
+
+Input:
+
+25
+
+Output:
+
+Divisible
+
+Q3. Print Numbers from 20 to 1
+
+Output:
+
+20
+19
+18
+...
+1
+
+Q4. Sum of Numbers from 1 to 10
+
+Output:
+
+55
+
+Hint:
+
+sum = 0
+
+Q5. Multiplication Table
+
+Input:
+
+5
+
+Output:
+
+5 x 1 = 5
+5 x 2 = 10
+...
+5 x 10 = 50
