@@ -1,0 +1,260 @@
+Day 4: Arrays (Lists in Python)
+What is an Array?
+
+An array is a collection of multiple values stored in a single variable.
+
+In Python, we usually use Lists.
+
+Example:
+
+numbers = [10, 20, 30, 40, 50]
+
+Instead of:
+
+a = 10
+b = 20
+c = 30
+d = 40
+e = 50
+
+we store everything together.
+
+Why Arrays Are Important
+
+Imagine a class of 100 students.
+
+Without arrays:
+
+student1 = 85
+student2 = 90
+student3 = 78
+...
+
+Impossible to manage.
+
+With arrays:
+
+marks = [85, 90, 78, 88, 92]
+
+Much easier.
+
+Almost every DSA topic uses arrays:
+
+Searching
+Sorting
+Stacks
+Queues
+Trees
+Graphs
+
+Arrays are the foundation.
+
+Accessing Elements
+
+Every element has an index.
+
+arr = [10, 20, 30, 40, 50]
+Index	Value
+0	10
+1	20
+2	30
+3	40
+4	50
+
+Access:
+
+print(arr[0])
+
+Output:
+
+10
+Traversing an Array
+
+"Traversing" means visiting every element one by one.
+
+Example:
+
+arr = [10, 20, 30, 40, 50]
+
+for i in arr:
+    print(i)
+
+Output:
+
+10
+20
+30
+40
+50
+How Interviewers Think
+
+Suppose interviewer asks:
+
+Find the largest number in an array.
+
+Most beginners think:
+
+Need code...
+Need code...
+Need code...
+
+Wrong approach.
+
+First think:
+
+Array: [12, 45, 7, 89, 23]
+
+Largest = 12
+
+Compare 45 with 12
+Largest = 45
+
+Compare 7 with 45
+Largest = 45
+
+Compare 89 with 45
+Largest = 89
+
+Compare 23 with 89
+Largest = 89
+
+Answer = 89
+
+Then write code.
+
+The Golden Rule of DSA
+
+Whenever you get a problem:
+
+Step 1
+
+Take an example.
+
+arr = [12, 45, 7, 89, 23]
+Step 2
+
+Solve manually.
+
+Step 3
+
+Write English steps.
+
+Example:
+
+1. Assume first element is largest.
+2. Visit each element.
+3. Compare with largest.
+4. Update largest if needed.
+5. Print largest.
+Step 4
+
+Convert to code.
+
+Important Array Operations
+Find Sum
+
+Example:
+
+arr = [10, 20, 30]
+
+Manual:
+
+10 + 20 + 30 = 60
+
+Code:
+
+total = 0
+
+for num in arr:
+    total += num
+
+print(total)
+Count Elements
+
+Example:
+
+arr = [5, 10, 15, 20]
+
+Manual:
+
+4 elements
+
+Code:
+
+count = 0
+
+for i in arr:
+    count += 1
+
+print(count)
+Find Average
+
+Formula:
+
+Example:
+
+arr = [10, 20, 30, 40, 50]
+
+Manual:
+
+Sum = 150
+
+Count = 5
+
+Average = 150 / 5 = 30
+Big O (Very Basic Introduction)
+
+Don't worry too much about this yet.
+
+If an array has:
+
+[10,20,30,40,50]
+
+and you visit every element once:
+
+for num in arr:
+    print(num)
+
+Time Complexity:
+
+O(n)
+
+Meaning:
+
+5 elements → 5 operations
+100 elements → 100 operations
+1000 elements → 1000 operations
+
+This is called Linear Time.
+
+We'll study Big O in detail later.
+
+Your Guided Practice
+
+Before coding, write the algorithm in English.
+
+Q1
+
+Print all elements:
+
+arr = [10, 20, 30, 40, 50]
+Q2
+
+Find the sum:
+
+arr = [5, 10, 15, 20]
+Q3
+
+Find the largest element without using max()
+
+arr = [12, 45, 7, 89, 23]
+Q4
+
+Count even numbers:
+
+arr = [2, 5, 8, 11, 14, 17]
+Q5
+
+Find the average:
+
+arr = [10, 20, 30, 40, 50]
