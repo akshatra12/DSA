@@ -1,0 +1,90 @@
+Day 5 Concept: Linear Search
+
+This is your first real searching algorithm.
+
+Suppose:
+
+arr = [10, 20, 30, 40, 50]
+
+Question:
+
+Is 30 present?
+
+How humans search:
+
+Check 10 ❌
+Check 20 ❌
+Check 30 ✅ Found
+
+This is called Linear Search.
+
+Example
+arr = [10,20,30,40,50]
+
+target = 30
+
+for i in arr:
+    if i == target:
+        print("Found")
+
+Output:
+
+Found
+Why This Matters
+
+Every search algorithm starts with this idea.
+
+Later you'll learn:
+
+Linear Search
+Binary Search
+Hashing
+Trees
+Graph Search
+Day 5 Questions
+Q1
+
+Find whether 25 exists.
+
+arr = [10,15,20,25,30]
+
+Output:
+
+Found
+Q2
+
+Find whether 100 exists.
+
+arr = [5,10,15,20]
+
+Output:
+
+Not Found
+Q3
+
+Count how many times 5 appears.
+
+arr = [5,2,5,8,5,10]
+
+Output:
+
+3
+Q4
+
+Find the smallest element.
+
+arr = [12,45,7,89,23]
+
+Don't use min().
+
+Q5
+
+Find the second largest element.
+
+arr = [10,20,5,40,30]
+
+Expected Output:
+
+30
+
+⚠️ This one is slightly challenging. Spend some time thinking before coding.
