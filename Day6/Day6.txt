@@ -1,0 +1,122 @@
+Day 6 Concept: Indexing
+
+Until now you've been accessing values directly.
+
+Example:
+
+arr = [10,20,30,40,50]
+
+Each element has a position.
+
+Index	Value
+0	10
+1	20
+2	30
+3	40
+4	50
+
+Access:
+
+print(arr[2])
+
+Output:
+
+30
+Why Indexes Matter
+
+Interviewers often ask:
+
+Find the index of 30
+
+Not:
+
+Find 30
+
+This is different.
+
+Example:
+
+arr = [10,20,30,40,50]
+
+Output:
+
+2
+
+because 30 is at index 2.
+
+Guided Example
+
+Find index of 40.
+
+Algorithm:
+
+1. Traverse array.
+2. Compare each element with target.
+3. If found, print current index.
+
+Code:
+
+arr=[10,20,30,40,50]
+target=40
+
+for i in range(len(arr)):
+    if arr[i]==target:
+        print(i)
+
+Output:
+
+3
+Day 6 Questions
+Q1
+
+Find the index of 30.
+
+arr=[10,20,30,40,50]
+
+Expected:
+
+2
+Q2
+
+Find the index of 14.
+
+arr=[2,5,8,11,14,17]
+
+Expected:
+
+4
+Q3
+
+Find all indexes where 5 appears.
+
+arr=[5,2,5,8,5,10]
+
+Expected:
+
+0
+2
+4
+Q4
+
+Count how many elements are greater than 20.
+
+arr=[5,25,15,30,40,10]
+
+Expected:
+
+3
+Q5
+
+Find the sum of elements at even indexes.
+
+arr=[10,20,30,40,50]
+
+Indexes:
+
+0 -> 10
+2 -> 30
+4 -> 50
+
+Expected:
+
+90
