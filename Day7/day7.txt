@@ -1,0 +1,106 @@
+Day 7 Concept: Frequency Counting
+
+This is one of the most important topics in DSA.
+
+Suppose:
+
+arr = [1,2,2,3,3,3,4]
+
+Question:
+
+How many times does each number appear?
+
+Answer:
+
+1 -> 1
+2 -> 2
+3 -> 3
+4 -> 1
+
+This is called frequency counting.
+
+Why Is It Important?
+
+Many interview questions are based on it:
+
+Most frequent element
+Duplicate detection
+Character counting
+Anagrams
+Hash Maps
+Sliding Window
+Using a Dictionary
+arr = [1,2,2,3,3,3,4]
+
+freq = {}
+
+for num in arr:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+print(freq)
+
+Output:
+
+{1:1, 2:2, 3:3, 4:1}
+Day 7 Questions
+Q1
+
+Count frequency of:
+
+arr = [1,2,2,3,3,3,4]
+
+Expected:
+
+{1:1, 2:2, 3:3, 4:1}
+Q2
+
+Count frequency of characters:
+
+word = "banana"
+
+Expected:
+
+{'b':1, 'a':3, 'n':2}
+Q3
+
+Find the number that appears most often.
+
+arr = [1,2,2,3,3,3,4]
+
+Expected:
+
+3
+Q4
+
+Check if duplicates exist.
+
+arr = [1,2,3,4,2]
+
+Expected:
+
+Duplicate Found
+Q5
+
+Count vowels in:
+
+"programming"
+
+Expected:
+
+3
+
+(Vowels: o, a, i)
+
+Bonus Tip
+
+Before solving Day 7, spend 15–20 minutes learning and experimenting with Python dictionaries:
+
+student = {
+    "name": "Akshatra",
+    "age": 23
+}
+
+print(student["name"])
