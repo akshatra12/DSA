@@ -1,0 +1,119 @@
+Day 8 Concept: Strings
+
+A string is simply a sequence of characters.
+
+Example:
+
+name = "akshatra"
+
+Think of it like an array:
+
+Index	Character
+0	a
+1	k
+2	s
+3	h
+4	a
+5	t
+6	r
+7	a
+Traversing a String
+word = "hello"
+
+for ch in word:
+    print(ch)
+
+Output:
+
+h
+e
+l
+l
+o
+String Reversal
+word = "hello"
+
+print(word[::-1])
+
+Output:
+
+olleh
+Palindrome
+
+A palindrome reads the same forwards and backwards.
+
+Examples:
+
+madam
+racecar
+level
+
+Logic:
+
+word = "madam"
+
+if word == word[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+Day 8 Questions
+Q1
+
+Count the number of characters.
+
+word = "python"
+
+Expected:
+
+6
+
+⚠️ Don't use len().
+
+Q2
+
+Count how many times 'a' appears.
+
+word = "banana"
+
+Expected:
+
+3
+Q3
+
+Reverse the string.
+
+word = "hello"
+
+Expected:
+
+olleh
+Q4
+
+Check palindrome.
+
+word = "madam"
+
+Expected:
+
+Palindrome
+Q5
+
+Count vowels and consonants.
+
+word = "programming"
+
+Expected:
+
+Vowels = 3
+Consonants = 8
+Challenge Question ⭐
+
+Without using:
+
+[::-1]
+
+Reverse:
+
+"hello"
+
+using a loop.
