@@ -1,0 +1,166 @@
+Concept: Nested Loops & Patterns
+
+Many students hate patterns, but patterns teach:
+
+Loop control
+Observation skills
+Logic building
+Interview thinking
+Pattern 1
+*
+**
+***
+****
+*****
+
+Logic:
+
+Row 1 → 1 star
+
+Row 2 → 2 stars
+
+Row 3 → 3 stars
+
+...
+
+Code:
+
+for i in range(1,6):
+    print("*" * i)
+Pattern 2
+*****
+****
+***
+**
+*
+
+Logic:
+
+Start with 5 stars and decrease.
+
+Pattern 3
+1
+12
+123
+1234
+12345
+
+Notice:
+
+Row 4 contains:
+
+1234
+
+Not:
+
+****
+
+This requires nested loops.
+
+Example:
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
+Day 9 Questions
+Level 1: Easy Patterns
+Pattern 1
+*
+**
+***
+****
+*****
+Pattern 2
+*****
+****
+***
+**
+*
+Pattern 3
+1
+12
+123
+1234
+12345
+Pattern 4
+A
+AB
+ABC
+ABCD
+ABCDE
+Pattern 5
+*****
+*****
+*****
+*****
+*****
+Level 2: Number Patterns
+Pattern 6
+1
+22
+333
+4444
+55555
+Pattern 7
+11111
+2222
+333
+44
+5
+Pattern 8
+12345
+1234
+123
+12
+1
+Pattern 9
+5
+54
+543
+5432
+54321
+Pattern 10
+1
+21
+321
+4321
+54321
+Level 3: Space-Based Patterns
+Pattern 11
+    *
+   **
+  ***
+ ****
+*****
+Pattern 12
+*****
+ ****
+  ***
+   **
+    *
+Pattern 13
+    1
+   12
+  123
+ 1234
+12345
+Level 4: Pyramid Patterns
+Pattern 14
+    *
+   ***
+  *****
+ *******
+*********
+Pattern 15
+*********
+ *******
+  *****
+   ***
+    *
+Pattern 16
+    1
+   121
+  12321
+ 1234321
+123454321
