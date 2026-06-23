@@ -1,0 +1,148 @@
+Concept: Functions
+
+Until now you've written code like:
+
+a = 10
+b = 20
+print(a+b)
+
+But imagine needing this 100 times.
+
+Instead we create a function.
+
+What is a Function?
+
+A function is a reusable block of code.
+
+Example:
+
+def greet():
+    print("Hello")
+
+Call it:
+
+greet()
+
+Output:
+
+Hello
+Function With Parameters
+def greet(name):
+    print("Hello", name)
+
+greet("Akshatra")
+
+Output:
+
+Hello Akshatra
+Function Returning a Value
+def add(a,b):
+    return a+b
+
+result = add(10,20)
+
+print(result)
+
+Output:
+
+30
+Why Functions Matter in DSA
+
+Suppose interviewer asks:
+
+Find largest element.
+
+Instead of writing everything in main code:
+
+def largest(arr):
+    ...
+
+Much cleaner.
+
+Day 10 Questions
+Q1
+
+Create a function:
+
+def square(num):
+
+that returns square of a number.
+
+Example:
+
+Input: 5
+Output: 25
+Q2
+
+Create a function:
+
+def is_even(num):
+
+Return:
+
+True
+
+if even otherwise
+
+False
+Q3
+
+Create a function:
+
+def find_sum(arr):
+
+that returns sum of array.
+
+Example:
+
+[10,20,30]
+
+Output:
+
+60
+Q4
+
+Create a function:
+
+def largest(arr):
+
+that returns largest element.
+
+Q5
+
+Create a function:
+
+def count_vowels(word):
+
+that returns number of vowels.
+
+Example:
+
+programming
+
+Output:
+
+3
+Bonus Challenge ⭐
+
+Create:
+
+def palindrome(word):
+
+Return:
+
+True
+
+or
+
+False
+
+instead of printing.
+
+Example:
+
+print(palindrome("madam"))
+
+Output:
+
+True
