@@ -1,0 +1,166 @@
+Q1
+for i in arr:
+    print(i)
+
+Your Answer:
+
+O(n)
+
+✅ Correct
+
+Q2
+print(arr[3])
+
+Your Answer:
+
+O(3)
+
+❌ Incorrect
+
+Correct Answer:
+
+O(1)
+Why?
+arr[3]
+
+Python directly jumps to index 3.
+
+Whether array has:
+
+5 elements
+500 elements
+500000 elements
+
+it still takes roughly the same amount of time.
+
+So:
+
+O(1)
+
+Remember:
+
+O(3) → simplified to O(1)
+O(100) → simplified to O(1)
+
+Constants are ignored in Big O.
+
+Q3
+for i in arr:
+    for j in arr:
+        print(i,j)
+
+Your Answer:
+
+O(n²)
+
+✅ Correct
+
+Q4
+
+You answered:
+
+O(n)
+
+But Q4 was:
+
+Write a function smallest(arr)
+
+So this needed code, not complexity.
+
+Example solution:
+
+def smallest(arr):
+    small = arr[0]
+
+    for num in arr:
+        if num < small:
+            small = num
+
+    return small
+
+Complexity:
+
+O(n)
+Q5
+
+You answered:
+
+O(2n)
+
+But Q5 was:
+
+Write a function second_largest(arr)
+
+Again, it required code.
+
+Example:
+
+def second_largest(arr):
+    largest = float('-inf')
+    second = float('-inf')
+
+    for num in arr:
+        if num > largest:
+            second = largest
+            largest = num
+        elif num > second and num != largest:
+            second = num
+
+    return second
+
+Complexity:
+
+O(n)
+
+Not O(2n).
+
+And even if it were O(2n):
+
+O(2n) = O(n)
+
+because constants are ignored.
+
+Mini Interview Question
+
+You answered:
+
+O(n)
+
+The complexity is correct.
+
+But the question asked for a function.
+
+Example:
+
+def count_elements(arr):
+    count = 0
+
+    for i in arr:
+        count += 1
+
+    return count
+
+Complexity:
+
+O(n)
+Important Big O Rules
+Rule 1
+O(5)  → O(1)
+O(100) → O(1)
+
+Ignore constants.
+
+Rule 2
+O(2n) → O(n)
+O(10n) → O(n)
+
+Ignore constant multipliers.
+
+Rule 3
+O(n² + n)
+
+becomes:
+
+O(n²)
+
+Keep the largest term.

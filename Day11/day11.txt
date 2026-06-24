@@ -1,0 +1,183 @@
+Day 11 Concept: Time Complexity (Big O)
+
+This is where DSA starts becoming interview-focused.
+
+Don't worry. We'll keep it simple.
+
+Why Do We Need Time Complexity?
+
+Imagine two solutions.
+
+Solution A
+for i in arr:
+    print(i)
+Solution B
+for i in arr:
+    for j in arr:
+        print(i,j)
+
+Both work.
+
+But which is faster for 1,000,000 elements?
+
+That's what Big O measures.
+
+O(1) - Constant Time
+
+Example:
+
+arr = [10,20,30,40,50]
+
+print(arr[2])
+
+No matter if array has:
+
+5 elements
+500 elements
+50000 elements
+
+Only one operation.
+
+Time Complexity:
+
+O(1)
+O(n) - Linear Time
+
+Example:
+
+for num in arr:
+    print(num)
+
+If array size doubles:
+
+10 → 20 elements
+
+work also doubles.
+
+Time Complexity:
+
+O(n)
+O(n²) - Quadratic Time
+
+Example:
+
+for i in arr:
+    for j in arr:
+        print(i,j)
+
+If:
+
+n = 5
+
+Operations:
+
+5 × 5 = 25
+
+If:
+
+n = 100
+
+Operations:
+
+100 × 100 = 10000
+
+Time Complexity:
+
+O(n²)
+Visual Understanding
+n	O(1)	O(n)	O(n²)
+10	1	10	100
+100	1	100	10,000
+1000	1	1000	1,000,000
+
+This is why interviewers care about complexity.
+
+Example
+
+Your solution:
+
+def largest(arr):
+    arr.sort()
+    return arr[-1]
+
+Sorting generally costs:
+
+O(n log n)
+
+Better solution:
+
+largest = arr[0]
+
+for num in arr:
+    if num > largest:
+        largest = num
+
+Complexity:
+
+O(n)
+
+This is why interviewers prefer it.
+
+Day 11 Questions
+Q1
+
+What is the time complexity?
+
+for i in arr:
+    print(i)
+Q2
+
+What is the time complexity?
+
+print(arr[3])
+Q3
+
+What is the time complexity?
+
+for i in arr:
+    for j in arr:
+        print(i,j)
+Q4
+
+Write a function:
+
+def smallest(arr):
+
+without using:
+
+min()
+sort()
+Q5
+
+Write a function:
+
+def second_largest(arr):
+
+without using:
+
+sort()
+max()
+
+Hint:
+
+Maintain:
+
+largest
+second_largest
+Mini Interview Question ⭐
+
+Array:
+
+arr = [10,20,30,40,50]
+
+Without using len():
+
+Write a function that counts the number of elements.
+
+Example:
+
+count_elements(arr)
+
+Output:
+
+5
