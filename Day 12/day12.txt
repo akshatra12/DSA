@@ -1,0 +1,112 @@
+Day 12: Reverse an Array
+Concept
+
+Given:
+
+arr = [10,20,30,40,50]
+
+Output:
+
+[50,40,30,20,10]
+Think Like a Programmer
+
+Don't code first.
+
+Ask:
+
+What is happening?
+
+We need:
+
+Last element → First position
+Second last → Second position
+...
+Method 1 (Extra Array)
+
+Example:
+
+arr = [10,20,30]
+
+Process:
+
+Take 30
+Take 20
+Take 10
+
+Result:
+
+[30,20,10]
+Day 12 Questions
+Q1
+
+Write a function:
+
+def reverse_array(arr):
+
+Input:
+
+[10,20,30,40,50]
+
+Output:
+
+[50,40,30,20,10]
+Q2
+
+Find the largest element.
+
+Do not use:
+
+max()
+sort()
+
+Input:
+
+[12,45,7,89,23]
+
+Output:
+
+89
+Q3
+
+Find the smallest element.
+
+Do not use:
+
+min()
+sort()
+
+Input:
+
+[12,45,7,89,23]
+
+Output:
+
+7
+Q4
+
+Count how many times 5 appears.
+
+Input:
+
+[5,2,5,8,5,10]
+
+Output:
+
+3
+Q5 ⭐
+
+Find the second largest element.
+
+Input:
+
+[10,20,5,40,30]
+
+Output:
+
+30
+Hint
+
+Maintain two variables:
+
+largest
+second_largest
