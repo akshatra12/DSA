@@ -1,0 +1,214 @@
+Concept: Two Pointers
+
+This is one of the most important DSA techniques.
+
+Many interview questions use it.
+
+First Understand the Problem
+
+Suppose:
+
+arr = [10,20,30,40,50]
+
+We want to reverse it.
+
+You already know:
+
+arr[::-1]
+
+But interviewers want logic.
+
+Human Thinking
+
+Current array:
+
+10 20 30 40 50
+ ↑           ↑
+left       right
+
+Swap:
+
+50 20 30 40 10
+
+Move pointers:
+
+50 20 30 40 10
+    ↑     ↑
+  left right
+
+Swap again:
+
+50 40 30 20 10
+
+Now:
+
+50 40 30 20 10
+       ↑
+
+Done.
+
+What Are Two Pointers?
+
+Two variables:
+
+left = 0
+right = len(arr)-1
+
+One starts from beginning.
+
+One starts from end.
+
+They move toward each other.
+
+Visual Example
+
+Array:
+
+[10,20,30,40,50]
+
+Initially:
+
+left = 0
+right = 4
+
+10 20 30 40 50
+↑           ↑
+
+Swap:
+
+50 20 30 40 10
+
+Move:
+
+left += 1
+right -= 1
+
+Now:
+
+50 20 30 40 10
+   ↑     ↑
+
+Swap:
+
+50 40 30 20 10
+
+Done.
+
+Algorithm
+Step 1:
+Initialize left = 0
+
+Step 2:
+Initialize right = n-1
+
+Step 3:
+While left < right
+
+Step 4:
+Swap arr[left] and arr[right]
+
+Step 5:
+left += 1
+
+Step 6:
+right -= 1
+
+Step 7:
+Return array
+Code
+def reverse_array(arr):
+
+    left = 0
+    right = len(arr)-1
+
+    while left < right:
+
+        arr[left], arr[right] = arr[right], arr[left]
+
+        left += 1
+        right -= 1
+
+    return arr
+Why Is This Important?
+
+This technique is used in:
+
+✅ Reverse Array
+
+✅ Palindrome Check
+
+✅ Remove Duplicates
+
+✅ Move Zeroes
+
+✅ Sorted Array Problems
+
+✅ Pair Sum Problems
+
+Many interview questions are just variations of Two Pointers.
+
+Day 13 Questions
+Q1
+
+Use Two Pointers to reverse:
+
+[10,20,30,40,50]
+
+Don't use:
+
+[::-1]
+Q2
+
+Check if:
+
+"madam"
+
+is a palindrome using Two Pointers.
+
+Hint:
+
+left = 0
+right = len(word)-1
+Q3
+
+Check if:
+
+"python"
+
+is a palindrome.
+
+Expected:
+
+False
+Q4
+
+Count how many swaps are required to reverse:
+
+[1,2,3,4,5,6]
+
+(Hint: increment a swap counter)
+
+Q5 ⭐
+
+Reverse only the string:
+
+"akshatra"
+
+using Two Pointers.
+
+No slicing.
+
+New Learning Habit
+
+For every question, write:
+
+Dry Run:
+
+left = ?
+right = ?
+
+Array becomes?
+
+left moves?
+right moves?
+The ability to dry-run code is what separates beginners from strong DSA problem solvers.
