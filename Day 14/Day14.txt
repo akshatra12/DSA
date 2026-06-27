@@ -1,0 +1,145 @@
+Concept: Sliding Window (Very Important)
+
+This is one of the most asked interview patterns.
+
+Let's understand slowly.
+
+Problem
+
+Array:
+
+arr = [2,1,5,1,3,2]
+
+Question:
+
+Find the maximum sum of 3 consecutive elements.
+
+Human Method
+
+Check every group:
+
+2 + 1 + 5 = 8
+
+1 + 5 + 1 = 7
+
+5 + 1 + 3 = 9
+
+1 + 3 + 2 = 6
+
+Maximum:
+
+9
+Observation
+
+Window size:
+
+3
+
+We only care about 3 consecutive elements.
+
+Think of a window:
+
+[2,1,5],1,3,2
+
+Move it:
+
+2,[1,5,1],3,2
+
+Move it:
+
+2,1,[5,1,3],2
+
+Move it:
+
+2,1,5,[1,3,2]
+
+This is called Sliding Window.
+
+Why It's Powerful
+
+Without Sliding Window:
+
+O(n²)
+
+With Sliding Window:
+
+O(n)
+
+Much faster.
+
+Day 14 Questions
+Q1
+
+Find maximum sum of 2 consecutive elements.
+
+arr = [1,2,3,4,5]
+
+Expected:
+
+9
+
+because:
+
+4 + 5 = 9
+Q2
+
+Find maximum sum of 3 consecutive elements.
+
+arr = [2,1,5,1,3,2]
+
+Expected:
+
+9
+Q3
+
+Find minimum sum of 2 consecutive elements.
+
+arr = [4,2,1,7,8]
+
+Expected:
+
+3
+
+because:
+
+2 + 1 = 3
+Q4
+
+Find average of every window of size 3.
+
+arr = [1,2,3,4,5]
+
+Expected:
+
+2
+3
+4
+
+Because:
+
+(1+2+3)/3 = 2
+
+(2+3+4)/3 = 3
+
+(3+4+5)/3 = 4
+Q5 ⭐
+
+Find maximum sum of 4 consecutive elements.
+
+arr = [4,2,1,7,8,1,2,8]
+
+Try to solve using the window idea.
+
+Important
+
+Before solving Day 14:
+
+Take paper and draw:
+
+[2,1,5],1,3,2
+
+2,[1,5,1],3,2
+
+2,1,[5,1,3],2
+
+Visualizing the window is the key to understanding Sliding Window.

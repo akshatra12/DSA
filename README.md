@@ -1,28 +1,29 @@
-# 🚀 DSA in Python – Logic Building Journey (Day 1 – Day 13)
+# 🚀 DSA in Python – Logic Building Journey (Day 1 – Day 14)
 
-> A structured Data Structures & Algorithms journey focused on strengthening problem-solving skills from scratch using Python.
-
-## 📌 About
-
-This repository contains my daily DSA practice while building strong programming logic. The goal is not just solving problems but understanding **how to think like a programmer** by learning common algorithmic patterns.
-
-Currently completed: **Day 13**
+> A structured Data Structures & Algorithms journey focused on strengthening problem-solving skills from scratch using Python. This repository documents my daily progress, concepts learned, and coding practice while preparing for technical interviews.
 
 ---
 
-## 🛠️ Language
+# 📌 About
+
+This repository contains my day-by-day DSA practice using **Python**. Instead of memorizing solutions, I focus on understanding **problem-solving patterns** that are commonly used in coding interviews.
+
+**Current Progress:** ✅ Day 14 Completed
+
+---
+
+# 🛠️ Language
 
 * Python 3
 
 ---
 
-# 📅 Progress
+# 📅 Learning Progress
 
-## ✅ Day 1 – Python Basics
+## ✅ Day 1 – Python Fundamentals
 
-* Variables
+* Variables & Data Types
 * Input / Output
-* Data Types
 * Conditional Statements
 * Basic Logic Building
 
@@ -30,18 +31,18 @@ Currently completed: **Day 13**
 
 ## ✅ Day 2 – Loops
 
-* for loop
-* while loop
-* Nested loops
-* Pattern printing basics
+* `for` Loop
+* `while` Loop
+* Nested Loops
+* Pattern Printing
 
 ---
 
 ## ✅ Day 3 – Functions
 
-* Function creation
+* Function Creation
 * Parameters
-* Return values
+* Return Values
 * Scope
 
 ---
@@ -58,34 +59,30 @@ Currently completed: **Day 13**
 ## ✅ Day 5 – Strings
 
 * String Traversal
-* Character Counting
 * Reverse String
+* Character Count
 * Vowel Count
 
 ---
 
-## ✅ Day 6 – Dictionaries (Hashing)
+## ✅ Day 6 – Hashing (Dictionary)
 
-* Frequency Count
-* Counting Characters
-* Counting Numbers
+* Frequency Counting
+* Character Frequency
 * Duplicate Detection
+* Dictionary Operations
 
 ---
 
-## ✅ Day 7 – Basic Problem Solving
+## ✅ Day 7 – Logic Building
 
-Solved beginner array and string problems using:
-
-* Traversal
-* Counting
-* Conditional Logic
+* Basic Array Problems
+* String Problems
+* Interview Style Practice
 
 ---
 
 ## ✅ Day 8 – Array Practice
-
-Implemented:
 
 * Largest Element
 * Smallest Element
@@ -94,38 +91,32 @@ Implemented:
 
 ---
 
-## ✅ Day 9 – More Array Problems
+## ✅ Day 9 – Searching & Practice
 
-Practiced:
-
-* Searching
+* Linear Search
 * Counting Occurrences
-* Basic Interview Style Questions
+* Array-Based Logic Questions
 
 ---
 
 ## ✅ Day 10 – Revision
 
-Revised:
-
 * Arrays
 * Strings
 * Hashing
-* Frequency Count
+* Time Complexity Basics
 
 ---
 
 ## ✅ Day 11 – Pattern Recognition
 
-Focused on:
-
-* Selecting the correct approach
-* Improving logic-building skills
-* Understanding time complexity
+* Choosing the Correct Approach
+* Problem Analysis
+* Improving Logic Building
 
 ---
 
-## ✅ Day 12 – Array Interview Problems
+## ✅ Day 12 – Array Interview Questions
 
 Implemented:
 
@@ -135,76 +126,78 @@ Implemented:
 * Count Frequency
 * Second Largest Element
 
-### Concepts Learned
+---
 
-* Array Traversal
-* Edge Cases
-* Time Complexity O(n)
+## ✅ Day 13 – Two Pointers
+
+### Learned
+
+* Two Pointer Technique
+* Pointer Movement
+* Dry Run Method
+
+### Problems Solved
+
+* Reverse Array
+* Reverse String
+* Palindrome Check
+* Count Swaps
+* Non-Palindrome Detection
 
 ---
 
-# ⭐ Day 13 – Two Pointers (First Major DSA Pattern)
+## ✅ Day 14 – Sliding Window ⭐
 
-## Concept
+### Concept Learned
 
-Learned the **Two Pointer Technique**, where two pointers move toward each other from opposite ends of an array or string.
+The **Sliding Window** technique efficiently solves problems involving **consecutive elements** in an array.
 
-```
-left  →           ← right
-[10, 20, 30, 40, 50]
-```
+Instead of recalculating every window from scratch (**O(n²)**), we reuse the previous window's result to achieve **O(n)** complexity.
 
-This is one of the most frequently used interview patterns.
+### Problems Solved
 
----
+* Maximum Sum of 2 Consecutive Elements
+* Maximum Sum of 3 Consecutive Elements
+* Minimum Sum of 2 Consecutive Elements
+* Average of Every Window of Size 3
+* Maximum Sum of 4 Consecutive Elements
 
-## Problems Solved
+### Key Learning
 
-### Reverse Array
-
-* Reverse an array without using slicing.
-
-### Palindrome Check
-
-* Check whether a string is a palindrome using two pointers.
-
-### Non-Palindrome Detection
-
-* Verify strings that are not palindromes.
-
-### Count Swaps
-
-* Count the number of swaps required to reverse an array.
-
-### Reverse String
-
-* Reverse a string using two pointers without slicing.
+* Fixed Size Sliding Window
+* Window Expansion & Shift
+* Window Sum Optimization
+* Reducing Time Complexity from **O(n²)** → **O(n)**
 
 ---
 
-## DSA Patterns Learned So Far
+# 🧠 DSA Patterns Learned
 
-* ✅ Array Traversal
-* ✅ Frequency Counting (Hashing)
-* ✅ Two Pointers
+| Pattern              | Status |
+| -------------------- | ------ |
+| Array Traversal      | ✅      |
+| Hashing (Dictionary) | ✅      |
+| Two Pointers         | ✅      |
+| Sliding Window       | ✅      |
 
 ---
 
-## Time Complexities Covered
+# ⚡ Time Complexities Covered
 
-| Algorithm                    | Time Complexity |
-| ---------------------------- | --------------- |
-| Traversal                    | O(n)            |
-| Largest/Smallest             | O(n)            |
-| Frequency Count              | O(n)            |
-| Reverse Array (Two Pointers) | O(n)            |
-| Palindrome Check             | O(n)            |
+| Concept            | Complexity |
+| ------------------ | ---------- |
+| Traversal          | O(n)       |
+| Largest / Smallest | O(n)       |
+| Frequency Count    | O(n)       |
+| Reverse Array      | O(n)       |
+| Palindrome Check   | O(n)       |
+| Sliding Window     | O(n)       |
 
 ---
 
 # 📂 Repository Structure
 
-```
+```text
 DSA/
 │
 ├── Day01/
@@ -220,6 +213,7 @@ DSA/
 ├── Day11/
 ├── Day12/
 ├── Day13/
+├── Day14/
 └── README.md
 ```
 
@@ -227,38 +221,47 @@ DSA/
 
 # 🎯 Goals
 
-* Build strong programming logic.
+* Strengthen problem-solving skills.
 * Master common DSA patterns.
 * Prepare for coding interviews.
-* Solve LeetCode and HackerRank problems confidently.
-* Improve problem-solving consistency through daily practice.
+* Solve LeetCode & HackerRank problems consistently.
+* Build confidence in writing optimized solutions.
 
 ---
 
 # 🚀 Upcoming Topics
 
-* Sliding Window
 * Prefix Sum
 * Binary Search
 * Recursion
-* Sorting Algorithms
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
 * Linked Lists
-* Stacks & Queues
+* Stack
+* Queue
 * Trees
 * Graphs
 * Dynamic Programming
 
 ---
 
-## 📈 Current Progress
+# 📊 Progress Overview
 
-* ✅ Days Completed: **13**
-* 🧠 Patterns Learned: **3**
-* 💻 Language: **Python**
-* 🎯 Goal: Crack Coding Interviews through consistent DSA practice.
+* ✅ **Days Completed:** 14
+* 📚 **DSA Patterns Learned:** 4
+
+  * Array Traversal
+  * Hashing
+  * Two Pointers
+  * Sliding Window
+* 💻 **Language:** Python
+* 🎯 **Current Focus:** Building strong algorithmic thinking and mastering interview-ready DSA patterns.
 
 ---
 
-## ⭐ If you find this repository helpful, feel free to star it and follow my DSA journey!
+## ⭐ Connect With Me
+
+If you're also learning DSA, feel free to explore this repository, follow my progress, and learn along the journey. Contributions, suggestions, and feedback are always welcome!
 
 **Happy Coding! 🚀**
