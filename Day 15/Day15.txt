@@ -1,0 +1,205 @@
+Concept: Prefix Sum
+
+I'm going to explain this one very carefully.
+
+Problem
+
+Suppose:
+
+arr = [2,4,6,8,10]
+
+Question:
+
+Find sum from index:
+
+1 to 3
+
+Meaning:
+
+4 + 6 + 8
+
+Answer:
+
+18
+Normal Approach
+
+Every time:
+
+sum = 0
+
+for i in range(left,right+1):
+    sum += arr[i]
+
+Complexity:
+
+O(n)
+What If We Need 1000 Queries?
+
+Example:
+
+sum(1,3)
+
+sum(0,4)
+
+sum(2,4)
+
+sum(1,2)
+
+...
+
+Doing loops every time becomes expensive.
+
+Prefix Sum Idea
+
+Array:
+
+[2,4,6,8,10]
+
+Build:
+
+prefix = [2,6,12,20,30]
+
+How?
+
+2
+
+2+4 = 6
+
+2+4+6 = 12
+
+2+4+6+8 = 20
+
+2+4+6+8+10 = 30
+Magic Formula
+
+To get sum from index L to R:
+
+If:
+
+prefix = [2,6,12,20,30]
+
+Want:
+
+index 1 to 3
+
+Meaning:
+
+4+6+8
+
+Formula:
+
+prefix[R] - prefix[L-1]
+
+Calculation:
+
+20 - 2 = 18
+
+Correct answer.
+
+Visual Understanding
+
+Array:
+
+2  4  6  8  10
+
+Prefix:
+
+2  6  12  20  30
+
+Want:
+
+4+6+8
+
+Take:
+
+2+4+6+8
+
+Subtract:
+
+2
+
+Result:
+
+4+6+8
+Day 15 Questions
+Q1
+
+Create prefix sum array.
+
+Input:
+
+[2,4,6,8,10]
+
+Output:
+
+[2,6,12,20,30]
+Q2
+
+Find sum from index 1 to 3.
+
+Array:
+
+[2,4,6,8,10]
+
+Expected:
+
+18
+
+Use prefix sum.
+
+Q3
+
+Find sum from index 2 to 4.
+
+Expected:
+
+24
+
+Because:
+
+6+8+10
+Q4
+
+Create a function:
+
+range_sum(arr,left,right)
+
+that returns sum between any indexes using prefix sum.
+
+Q5 ⭐
+
+Array:
+
+[1,2,3,4,5]
+
+How many subarrays of size 2 exist?
+
+List them.
+
+Example:
+
+[1,2]
+
+[2,3]
+
+[3,4]
+
+[4,5]
+
+This question prepares you for future Sliding Window and Subarray problems.
+
+Important
+
+Before coding Day 15:
+
+Take this example:
+
+[2,4,6,8,10]
+
+and manually build:
+
+[2,6,12,20,30]
+
+on paper.
+
+Understanding Prefix Sum visually is much more important than memorizing the formula
