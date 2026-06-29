@@ -1,0 +1,265 @@
+Recursion (Very Important)
+
+Recursion is one of the most important DSA concepts.
+
+Many topics later depend on it:
+
+Recursion
+↓
+Backtracking
+↓
+Trees
+↓
+Graphs
+What is Recursion?
+
+A function calling itself.
+
+Example:
+
+def hello():
+    print("Hello")
+    hello()
+
+This runs forever.
+
+Why?
+
+Because there is no stopping condition.
+
+Base Case
+
+Every recursion needs:
+
+Base Case
+if condition:
+    return
+
+This stops recursion.
+
+Without a base case:
+
+Infinite Calls
+→ Memory Full
+→ Recursion Error
+Example 1
+
+Print numbers from 1 to 5.
+
+Normal way:
+
+for i in range(1,6):
+    print(i)
+
+Recursive way:
+
+def print_num(n):
+
+    if n == 6:
+        return
+
+    print(n)
+
+    print_num(n+1)
+
+print_num(1)
+
+Output:
+
+1
+2
+3
+4
+5
+How It Works
+
+Call Stack:
+
+print_num(1)
+
+print_num(2)
+
+print_num(3)
+
+print_num(4)
+
+print_num(5)
+
+print_num(6)
+
+At:
+
+n = 6
+
+Base case hits:
+
+return
+
+and execution stops.
+
+Example 2: Factorial
+
+You already solved factorial using loops.
+
+Let's understand recursion.
+
+Mathematical Definition
+5! = 5 × 4!
+
+4! = 4 × 3!
+
+3! = 3 × 2!
+
+2! = 2 × 1!
+
+1! = 1
+
+Code:
+
+def factorial(n):
+
+    if n == 1:
+        return 1
+
+    return n * factorial(n-1)
+
+Example:
+
+print(factorial(5))
+
+Output:
+
+120
+Dry Run
+factorial(5)
+
+5 × factorial(4)
+
+5 × 4 × factorial(3)
+
+5 × 4 × 3 × factorial(2)
+
+5 × 4 × 3 × 2 × factorial(1)
+
+5 × 4 × 3 × 2 × 1
+
+120
+Revision Question 1 (Hashing)
+
+Find the first duplicate element.
+
+Example:
+
+arr = [1,2,3,2,4,5]
+
+Output:
+
+2
+
+Hint:
+
+Use dictionary.
+
+Revision Question 2 (Two Pointers)
+
+Check whether:
+
+"racecar"
+
+is palindrome using two pointers.
+
+Return:
+
+True
+
+or
+
+False
+Recursion Practice
+Q1
+
+Print numbers:
+
+1
+2
+3
+4
+5
+
+using recursion.
+
+Q2
+
+Print numbers:
+
+5
+4
+3
+2
+1
+
+using recursion.
+
+Q3
+
+Find factorial recursively.
+
+Input:
+
+5
+
+Output:
+
+120
+Q4
+
+Find sum of first N numbers recursively.
+
+Example:
+
+5
+
+Output:
+
+15
+
+Because:
+
+1+2+3+4+5
+Q5 ⭐
+
+Find power recursively.
+
+Example:
+
+power(2,3)
+
+Output:
+
+8
+
+Because:
+
+2 × 2 × 2
+Important Rule
+
+For recursion questions always write:
+
+Base Case:
+?
+
+Recursive Call:
+?
+
+Example:
+
+Factorial
+
+Base Case:
+n == 1
+
+Recursive Call:
+n * factorial(n-1)
+
+This habit will make recursion much easier.
+
