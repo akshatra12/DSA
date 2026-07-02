@@ -1,0 +1,189 @@
+Concept: Binary Search
+
+This is your first algorithm that is faster than linear search.
+
+Problem
+
+Find:
+
+40
+
+inside:
+
+arr = [10,20,30,40,50,60,70]
+Linear Search
+
+You already know:
+
+10 ❌
+
+20 ❌
+
+30 ❌
+
+40 ✅
+
+Complexity:
+
+O(n)
+Binary Search Idea
+
+Array must be sorted.
+
+[10,20,30,40,50,60,70]
+
+Look at middle.
+
+40
+
+Found immediately.
+
+Only one comparison.
+
+Another Example
+
+Find:
+
+60
+
+Middle:
+
+40
+
+Since:
+
+60 > 40
+
+Ignore left half.
+
+Search:
+
+50 60 70
+
+Middle:
+
+60
+
+Found.
+
+Visual
+10 20 30 40 50 60 70
+
+          ↑
+         mid
+
+If target bigger:
+
+Go Right
+
+If target smaller:
+
+Go Left
+Algorithm
+left = 0
+
+right = n-1
+
+while left <= right
+
+mid = (left + right)//2
+
+if target == arr[mid]
+    Found
+
+if target > arr[mid]
+    search right
+
+if target < arr[mid]
+    search left
+Code
+def binary_search(arr,target):
+
+    left=0
+    right=len(arr)-1
+
+    while left<=right:
+
+        mid=(left+right)//2
+
+        if arr[mid]==target:
+            return mid
+
+        elif target>arr[mid]:
+            left=mid+1
+
+        else:
+            right=mid-1
+
+    return -1
+Revision Question 1 (Sliding Window)
+
+Find maximum sum of window size:
+
+2
+
+Array:
+
+[5,2,8,1,9]
+Revision Question 2 (Prefix Sum)
+
+Build prefix array:
+
+[3,6,9,12]
+Binary Search Practice
+Q1
+
+Find:
+
+40
+
+inside:
+
+[10,20,30,40,50,60,70]
+
+Return index.
+
+Q2
+
+Find:
+
+15
+
+inside:
+
+[10,20,30,40,50]
+
+Return:
+
+-1
+Q3
+
+Find:
+
+70
+
+inside:
+
+[10,20,30,40,50,60,70]
+Q4 ⭐
+
+Count how many iterations Binary Search takes to find:
+
+60
+
+inside:
+
+[10,20,30,40,50,60,70]
+Q5 ⭐⭐
+
+Implement Binary Search recursively.
+
+We'll compare:
+
+Iterative
+vs
+Recursive
+
+versions tomorrow.
+
+You're now entering the phase where the questions start looking like actual interview questions rather than pure Python exercises. 🚀
