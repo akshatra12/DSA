@@ -1,0 +1,152 @@
+Concept: Sorting (Bubble Sort)
+
+Before learning advanced sorts, we need to understand why sorting works.
+
+What is Sorting?
+
+Input:
+
+[5,2,4,1,3]
+
+Output:
+
+[1,2,3,4,5]
+Bubble Sort Idea
+
+Compare adjacent elements.
+
+If wrong order:
+
+Swap
+
+Example:
+
+5 2 4 1 3
+
+Compare:
+
+5 and 2
+
+Swap:
+
+2 5 4 1 3
+
+Compare:
+
+5 and 4
+
+Swap:
+
+2 4 5 1 3
+
+Compare:
+
+5 and 1
+
+Swap:
+
+2 4 1 5 3
+
+Compare:
+
+5 and 3
+
+Swap:
+
+2 4 1 3 5
+
+Notice:
+
+Largest element reached the end.
+
+Like a bubble floating upward.
+
+Hence:
+
+Bubble Sort
+Bubble Sort Code
+def bubble_sort(arr):
+
+    n=len(arr)
+
+    for i in range(n):
+
+        for j in range(0,n-i-1):
+
+            if arr[j] > arr[j+1]:
+
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+
+    return arr
+Time Complexity
+
+Two nested loops:
+
+O(n²)
+
+Not efficient.
+
+But very important for learning sorting.
+
+Revision Question 1 (Binary Search)
+
+Find:
+
+50
+
+inside:
+
+[10,20,30,40,50,60,70]
+
+Return index.
+
+Revision Question 2 (Recursion)
+
+Find:
+
+power(3,4)
+
+using recursion.
+
+Expected:
+
+81
+Bubble Sort Questions
+Q1
+
+Sort:
+
+[5,2,4,1,3]
+
+using Bubble Sort.
+
+Q2
+
+Sort:
+
+[10,7,8,9,1,5]
+Q3
+
+Count how many swaps Bubble Sort performs on:
+
+[5,2,4,1,3]
+Q4
+
+Sort in descending order.
+
+Input:
+
+[1,2,3,4,5]
+
+Output:
+
+[5,4,3,2,1]
+Q5 ⭐
+
+Explain in your own words:
+
+Why is Bubble Sort O(n²)?
+
+No coding.
+
+Just explanation.
