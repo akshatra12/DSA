@@ -1,0 +1,168 @@
+Concept: Selection Sort
+
+Before coding, understand the idea.
+
+Bubble Sort
+
+Bubble Sort:
+
+Pushes the largest element to the end.
+Selection Sort
+
+Selection Sort:
+
+Finds the smallest element
+and puts it at the beginning.
+
+Example:
+
+[5,2,4,1,3]
+Pass 1
+
+Find smallest:
+
+1
+
+Swap with first element:
+
+[1,2,4,5,3]
+Pass 2
+
+Remaining:
+
+2,4,5,3
+
+Smallest:
+
+2
+
+Already in correct position.
+
+Pass 3
+
+Remaining:
+
+4,5,3
+
+Smallest:
+
+3
+
+Swap:
+
+[1,2,3,5,4]
+Pass 4
+
+Remaining:
+
+5,4
+
+Smallest:
+
+4
+
+Swap:
+
+[1,2,3,4,5]
+
+Done.
+
+Selection Sort Algorithm
+For every position i:
+
+Find smallest element
+from i to end
+
+Swap with i
+Code
+def selection_sort(arr):
+
+    n=len(arr)
+
+    for i in range(n):
+
+        min_idx=i
+
+        for j in range(i+1,n):
+
+            if arr[j] < arr[min_idx]:
+                min_idx=j
+
+        arr[i],arr[min_idx]=arr[min_idx],arr[i]
+
+    return arr
+Revision Question 1 (Binary Search)
+
+Find:
+
+80
+
+inside:
+
+[10,20,30,40,50,60,70,80,90]
+
+Return index.
+
+Revision Question 2 (Sliding Window)
+
+Find maximum sum of window size:
+
+3
+
+Array:
+
+[4,2,1,7,8,1,2,8]
+Selection Sort Questions
+Q1
+
+Sort:
+
+[5,2,4,1,3]
+
+using Selection Sort.
+
+Q2
+
+Sort:
+
+[10,7,8,9,1,5]
+
+using Selection Sort.
+
+Q3
+
+Count how many swaps Selection Sort performs on:
+
+[5,2,4,1,3]
+
+Hint:
+
+Count only the final swap of each pass.
+
+Q4
+
+Sort in descending order using Selection Sort.
+
+[1,2,3,4,5]
+Q5 ⭐
+
+Explain in your own words:
+
+Difference between Bubble Sort and Selection Sort.
+
+No code.
+
+Small Challenge (New Habit)
+
+For Q1, before coding, write:
+
+Pass 1:
+Array becomes ?
+
+Pass 2:
+Array becomes ?
+
+Pass 3:
+Array becomes ?
+
+This habit is extremely valuable for interviews because interviewers often ask you to dry-run sorting algorithms by hand.
