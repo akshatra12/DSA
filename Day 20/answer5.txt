@@ -1,0 +1,55 @@
+answer 1:
+1. take a array 
+2. assume a empty dictionary 
+3. traverse the array 
+4. if number which traverse is in dictionary then increase the count of dict and return number 
+5. else we add the value of number in the dictionary 
+
+
+answer 2: 
+1.take a string 
+2 initialize left pointer 0 and right pointer is len of string - 1 
+3. traverse the string [while left<right] 
+4 . word[left],word[right]=word[right],word[left] 
+5. left +=1 
+6.right -=1 
+7. after the loop we will return the string 
+
+
+answer 3: 
+1. initialize a array 
+2. window size=5 
+3 initialize window sum =0 
+4. traverse the array from 0 to window size 
+5. window sum+=arr[i] 
+6. assume maximum_sum=window sum 
+7. again traverse the array from 1 to len(arr)-window size +1 
+8. window sum =window sum - arr[i-1] + arr[i+k-1] 
+9 check if maximum_sum<window sum 
+10 maximum_sum=window sum 
+11. go to 7 untill the loop end 
+12. print maximum sum 
+
+
+answer 4: 
+1.left index=3 right index=8 
+2.apply prefix sum concept initialize a array for prefix sum 
+3.so first of all find the prefix sum 
+4.after finding the prefix sum 
+5.now we check if left==0 then sum= prefix_sum[right] 
+6.else: sum=prefix_sum[right] - prefix_sum[left-1] 
+
+
+answer 5: 
+In this quesion we apply a binary search algo 
+1.initialize left=0 and right = len(arr)-1 
+2.while left<right 
+3.mid = (left+right)/2 
+4.if target == arr[mid] 
+5.return mid 
+6.elif target > arr[mid] 
+7.left = mid+1 
+8.else -> 
+9.right =mid-1 
+10.run the loop until it finds the target 
+11.if target is not found then return -1
