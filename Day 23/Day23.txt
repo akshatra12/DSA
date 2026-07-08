@@ -1,0 +1,220 @@
+Day 23
+Revision Question 1 (Sliding Window + Binary Search)
+Observation Required First
+
+Given:
+
+arr = [2,5,1,8,2,9,1]
+
+Window size:
+
+k = 3
+Task
+Find the maximum window sum.
+Store the result in:
+target
+
+Now search for this target in the sorted array:
+
+sorted_arr = [6,8,10,12,14,16,18,20]
+
+If found:
+
+Return its index.
+
+Otherwise:
+
+Return -1.
+
+Before coding write:
+Observation:
+
+Algorithm:
+
+Time Complexity:
+Revision Question 2 (Hashing + Two Pointers)
+
+Given:
+
+word = "aebcbda"
+
+Task:
+
+Reverse only the vowels.
+Check whether the resulting string is a palindrome.
+
+Return:
+
+True
+
+or
+
+False
+🌟 New Concept: Kadane's Algorithm
+
+Today you're learning your first famous interview algorithm.
+
+This algorithm appears in:
+
+Amazon
+Microsoft
+Google
+Adobe
+Walmart
+Flipkart
+
+interviews.
+
+Problem
+
+Given:
+
+arr = [-2,1,-3,4,-1,2,1,-5,4]
+
+Find the maximum sum subarray.
+
+Notice:
+
+This is NOT a fixed window.
+
+The size is unknown.
+
+Example:
+
+[4,-1,2,1]
+
+Sum:
+
+6
+
+That's the answer.
+
+Why Can't We Use Sliding Window?
+
+Sliding Window works only when the window size is fixed.
+
+Example:
+
+Window size = 3
+
+But here:
+
+The best subarray could have:
+
+2 elements
+5 elements
+20 elements
+
+We don't know.
+
+That's why Kadane's Algorithm exists.
+
+Intuition
+
+Imagine carrying a bag of money.
+
+Every positive number adds money.
+
+Every negative number removes money.
+
+If your bag becomes negative, would you keep carrying it?
+
+No.
+
+You'd throw it away and start fresh.
+
+That's exactly what Kadane's Algorithm does.
+
+Dry Run
+[-2,1,-3,4,-1,2,1,-5,4]
+
+Current Sum:
+
+-2
+
+Negative.
+
+Throw it away.
+
+Start from:
+
+1
+
+Then:
+
+1-3=-2
+
+Negative.
+
+Throw it away.
+
+Start from:
+
+4
+
+Continue:
+
+4
+3
+5
+6
+
+Maximum:
+
+6
+Kadane's Algorithm
+current_sum = 0
+maximum_sum = arr[0]
+
+for num in arr:
+
+    current_sum += num
+
+    maximum_sum = max(maximum_sum, current_sum)
+
+    if current_sum < 0:
+        current_sum = 0
+
+We'll discuss why this works after you attempt the problems.
+
+New Concept Questions
+Q1
+
+Find the maximum subarray sum.
+
+arr = [-2,1,-3,4,-1,2,1,-5,4]
+
+Expected:
+
+6
+Q2
+arr = [5,4,-1,7,8]
+
+Expected:
+
+23
+Q3
+arr = [-1,-2,-3,-4]
+
+Expected:
+
+-1
+⭐ Q4
+
+Explain in your own words:
+
+Why do we reset current_sum to 0 when it becomes negative?
+
+No code.
+
+🟡 HackerRank Problem
+
+Given an array:
+
+arr = [4,5,4,5,4,6,7]
+
+Return the first non-repeating element.
+
+Expected:
+
+6
