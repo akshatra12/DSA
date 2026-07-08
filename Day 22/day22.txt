@@ -1,0 +1,259 @@
+Day 22
+Revision Question 1 (Two Pointers + Strings)
+Problem
+
+Given a string:
+
+word = "programming"
+
+Reverse only the vowels.
+
+Expected Output:
+
+"prigrammong"
+Think First
+
+Don't start coding.
+
+Write:
+
+Observation
+Which characters need to move?
+Which characters should remain in the same position?
+Hint
+
+Ask yourself:
+
+"Can I solve this using one pointer?"
+
+or
+
+"Do I need one pointer from both ends?"
+
+Revision Question 2 (Sliding Window + Prefix Sum)
+
+Array:
+
+arr = [2,1,5,1,3,2,6]
+Part A
+
+Find the maximum sum of a window of size 3.
+
+Part B
+
+Now build the prefix sum array.
+
+Part C
+
+Using the prefix array, find the sum from index 2 to 5.
+
+This question checks whether you know when to use Sliding Window and when to use Prefix Sum.
+
+🌟 New Concept: Hash Set
+
+You already know Dictionary (Hash Map).
+
+Today we'll learn Hash Set.
+
+Many beginners ask:
+
+"Why do we need a set if we already have a dictionary?"
+
+Good question.
+
+List
+arr = [1,2,2,3]
+
+Duplicates are allowed.
+
+Set
+s = {1,2,2,3}
+
+Output:
+
+{1,2,3}
+
+A set automatically removes duplicates.
+
+Why Is It Useful?
+
+Suppose I ask:
+
+Does the number 100 exist?
+
+Using a list:
+
+100 in arr
+
+takes up to O(n) time.
+
+Using a set:
+
+100 in s
+
+takes about O(1) time on average.
+
+That's why sets are powerful.
+
+Example
+arr = [1,2,3,2,5,1]
+
+seen = set()
+
+for num in arr:
+    if num in seen:
+        print("Duplicate:", num)
+    else:
+        seen.add(num)
+
+Output:
+
+Duplicate: 2
+Duplicate: 1
+
+Notice:
+
+seen.add(num)
+
+instead of
+
+freq[num] = 1
+New Concept Questions
+Q1
+
+Convert:
+
+[1,2,2,3,4,4,5]
+
+into a set.
+
+Print the result.
+
+Q2
+
+Count the number of unique elements.
+
+Input:
+
+[1,2,2,3,4,4,5]
+
+Expected:
+
+5
+
+Hint: You can use len() here.
+
+Q3
+
+Find the first duplicate using a set.
+
+Input:
+
+[3,1,4,2,5,4,6]
+
+Output:
+
+4
+Q4
+
+Check whether two arrays contain the same unique elements.
+
+Example:
+
+arr1 = [1,2,2,3]
+arr2 = [3,2,1]
+
+Output:
+
+True
+
+Another example:
+
+arr1 = [1,2,3]
+arr2 = [1,2,4]
+
+Output:
+
+False
+⭐ Q5 (Interview Style)
+
+Without using any built-in function like set():
+
+Given:
+
+arr = [1,2,2,3,1,4,5,5]
+
+Return only the unique elements:
+
+[1,2,3,4,5]
+
+Use only the concepts you've already learned (loops + hashing).
+
+🎯 HackerRank-Style Problem of the Day
+
+This is inspired by common beginner interview questions.
+
+Problem
+
+Given:
+
+arr = [10,20,30,40,50,60,70]
+target = 50
+Search for the target.
+If found, return:
+(index, value)
+
+Expected Output:
+
+(4, 50)
+
+If not found:
+
+(-1, None)
+Think Before Coding
+
+You have learned:
+
+Linear Search
+Binary Search
+
+Which one should you use?
+
+And more importantly:
+
+Why?
+
+Write your observation before writing code.
+
+New Rule (Very Important)
+
+From today onward, every answer you send should follow this format:
+
+Observation:
+
+...
+
+Algorithm:
+
+...
+
+Time Complexity:
+
+...
+
+Code:
+
+This habit will prepare you not just for coding interviews, but also for explaining your approach clearly—something many interviewers specifically evaluate.
+
+🔥 A Small Challenge
+
+You've completed 21 days consistently.
+
+So here's my challenge:
+
+Do not use AI or Google to look up solutions.
+
+If you get stuck for 20–30 minutes:
+
+Send me your observation.
+Tell me exactly where your logic breaks.
