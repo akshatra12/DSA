@@ -1,0 +1,229 @@
+Day 24
+🔁 Revision Question 1 (Pattern Recognition: Sliding Window + Hashing)
+Problem
+
+Given:
+
+arr = [1,2,3,2,5,2,1]
+k = 4
+
+Find the maximum sum window of size 4.
+
+After finding that window, answer:
+
+Does that window contain any duplicate elements?
+
+Example
+
+Suppose the maximum sum window is:
+
+[3,2,5,2]
+
+Now check whether this window contains duplicates.
+
+Before coding write:
+Observation:
+
+Pattern:
+
+Algorithm:
+
+Time Complexity:
+
+This question combines:
+
+Sliding Window
+Hashing
+🔁 Revision Question 2 (Two Pointers + Binary Search)
+
+Given:
+
+arr = [10,20,30,40,50,60,70]
+target = 90
+Task
+Use Binary Search to determine whether the target exists.
+If it doesn't exist, reverse the array using Two Pointers.
+
+Expected output:
+
+[70,60,50,40,30,20,10]
+
+This tests whether you can switch from one algorithm to another based on the result.
+
+🌟 New Concept: 2D Arrays (Matrices)
+
+Until now, you've worked with 1D arrays:
+
+arr = [10,20,30,40]
+
+Indexing:
+
+0 1 2 3
+What is a 2D Array?
+
+A 2D array is an array of arrays.
+
+Example:
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+Think of it like a table.
+
+1 2 3
+4 5 6
+7 8 9
+
+Rows:
+
+0
+1
+2
+
+Columns:
+
+0 1 2
+Accessing Elements
+matrix[0][0]
+
+Output:
+
+1
+matrix[1][2]
+
+Output:
+
+6
+matrix[2][1]
+
+Output:
+
+8
+Traversing a Matrix
+for row in matrix:
+    for value in row:
+        print(value)
+
+Output:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Why Are Matrices Important?
+
+Many interview problems are based on them:
+
+Image Rotation
+Sudoku
+Maze Problems
+Flood Fill
+Islands
+Graphs
+
+So we need a strong foundation.
+
+📚 Matrix Questions
+Q1
+
+Print every element.
+
+matrix = [
+    [1,2],
+    [3,4]
+]
+
+Output:
+
+1
+2
+3
+4
+Q2
+
+Find the sum of all elements.
+
+matrix = [
+    [1,2,3],
+    [4,5,6]
+]
+
+Expected:
+
+21
+Q3
+
+Find the largest element.
+
+matrix = [
+    [3,8,2],
+    [9,1,7]
+]
+
+Expected:
+
+9
+Q4
+
+Count how many even numbers are present.
+
+matrix = [
+    [2,5,8],
+    [1,6,9]
+]
+
+Expected:
+
+3
+⭐ Q5
+
+Print the matrix row by row.
+
+Input:
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+Output:
+
+1 2 3
+4 5 6
+7 8 9
+
+(Hint: print(..., end=" ") will help.)
+
+🟡 HackerRank-Style Problem
+
+Given:
+
+arr = [2,7,11,15]
+target = 9
+
+Return the indexes of the two numbers whose sum equals the target.
+
+Expected:
+
+[0,1]
+Important
+
+I am not telling you which pattern to use.
+
+Think:
+
+Two Pointers?
+Hashing?
+Binary Search?
+Brute Force?
+
+Choose the best one and explain why before coding.
