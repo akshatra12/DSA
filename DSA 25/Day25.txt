@@ -1,0 +1,281 @@
+Day 25
+📌 Revision Question 1 (Three Concepts)
+Problem
+
+Given:
+
+arr = [3,1,4,1,5,9,2]
+k = 3
+Task
+Find the maximum sum window of size k.
+Store that maximum sum in target.
+Use your optimized Two Sum (Hashing) approach to determine whether any two numbers in the original array sum to target.
+
+Return:
+
+True
+
+or
+
+False
+Before coding write:
+Observation:
+
+Pattern(s):
+
+Algorithm:
+
+Time Complexity:
+
+Hint: This combines Sliding Window + Hashing.
+
+📌 Revision Question 2 (Binary Search + Recursion)
+
+Given:
+
+arr = [5,10,15,20,25,30,35]
+target = 20
+Task
+Solve it using Recursive Binary Search.
+If found, calculate the factorial of the returned index using recursion.
+
+Example:
+
+If index = 3
+
+Return:
+
+3! = 6
+
+This combines Binary Search + Recursion.
+
+🌟 New Concept: Merge Sort
+
+Today you're starting your first Divide and Conquer algorithm.
+
+This is one of the most important sorting algorithms.
+
+Companies like:
+
+Google
+Microsoft
+Amazon
+Adobe
+
+love asking questions based on Merge Sort.
+
+Why Do We Need Merge Sort?
+
+Suppose we have:
+
+arr = [8,3,6,1,5,2]
+
+Bubble Sort
+
+O(n²)
+
+Selection Sort
+
+O(n²)
+
+Insertion Sort
+
+O(n²)
+
+Merge Sort
+
+O(n log n)
+
+This is much faster for large arrays.
+
+Core Idea
+
+Merge Sort follows:
+
+Divide
+
+Split the array into two halves.
+
+[8,3,6,1,5,2]
+
+↓
+
+[8,3,6]
+
+[1,5,2]
+
+Split again.
+
+[8]
+
+[3,6]
+
+[1]
+
+[5,2]
+
+Split until every array has only one element.
+
+[8]
+[3]
+[6]
+[1]
+[5]
+[2]
+Conquer
+
+Now merge them back in sorted order.
+
+[3]
+[6]
+
+↓
+
+[3,6]
+[5]
+[2]
+
+↓
+
+[2,5]
+
+Eventually:
+
+[1,2,3,5,6,8]
+Visualization
+            [8,3,6,1]
+
+          /           \
+
+      [8,3]         [6,1]
+
+     /    \         /    \
+
+   [8]   [3]     [6]    [1]
+
+     \    /        \     /
+
+     [3,8]        [1,6]
+
+         \         /
+
+       [1,3,6,8]
+
+Notice something?
+
+This is our first recursive algorithm that splits a problem into smaller problems.
+
+Important Observation
+
+Merge Sort has two separate jobs:
+
+1. Split the array (Recursion)
+2. Merge two sorted arrays
+
+You already learned how to merge two sorted arrays a few days ago.
+
+So half of Merge Sort is already familiar to you.
+
+Today's Goal
+
+We're not implementing Merge Sort today.
+
+We're first mastering the merge step.
+
+This will make the recursion much easier tomorrow.
+
+Practice Questions
+Q1
+
+Merge:
+
+arr1 = [1,4,7]
+arr2 = [2,3,8]
+
+Expected:
+
+[1,2,3,4,7,8]
+Q2
+
+Merge:
+
+arr1 = [5,10]
+arr2 = [1,2,20]
+
+Expected:
+
+[1,2,5,10,20]
+Q3
+
+Merge:
+
+arr1 = []
+arr2 = [1,2,3]
+
+Expected:
+
+[1,2,3]
+
+Think about this edge case before writing code.
+
+Q4
+
+Merge:
+
+arr1 = [1,3,5]
+arr2 = []
+
+Expected:
+
+[1,3,5]
+
+Another important edge case.
+
+⭐ Q5 (Thinking Question)
+
+Without writing code, answer:
+
+When one array finishes first, what should happen to the remaining elements of the other array?
+
+For example:
+
+arr1 = [1,4]
+arr2 = [2,3,5,6]
+
+After merging 1,2,3,4, what should happen to 5 and 6?
+
+🟡 HackerRank Challenge (Level 1 → Level 3)
+Problem
+arr = [1,5,7,-1,5]
+target = 6
+Level 1
+
+Write a brute-force solution.
+
+Level 2
+
+Write the time complexity.
+
+Level 3
+
+Optimize it using hashing.
+
+🎯 New Interview Habit
+
+From today onward, every solution you submit should follow this format:
+
+Observation:
+
+Pattern:
+
+Why this pattern?
+
+Algorithm:
+
+Time Complexity:
+
+Space Complexity:
+
+Code:
+
+It may feel like extra work at first, but after a few days, identifying the correct pattern will become almost automatic. That's exactly the skill interviewers are looking for.
