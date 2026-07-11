@@ -1,0 +1,276 @@
+Revision Question 1 (Sliding Window + Prefix Sum)
+Problem
+
+Given:
+
+arr = [2,4,6,8,10,12]
+k = 3
+Task
+Find the maximum sum window of size k.
+Build the prefix sum array.
+Check whether the maximum window sum is equal to any range sum in the array.
+
+Return:
+
+True
+
+or
+
+False
+Before coding write
+Observation:
+
+Pattern:
+
+Algorithm:
+
+Time Complexity:
+
+Space Complexity:
+🔁 Revision Question 2 (Hashing + Matrix)
+
+Given
+
+matrix = [
+    [1,2,2],
+    [3,4,4],
+    [5,6,7]
+]
+
+Return:
+
+True
+
+if any duplicate exists.
+
+Otherwise
+
+False
+🌟 New Concept — Merge Sort (Implementation)
+
+Yesterday you learned Merge.
+
+Today we'll understand the Divide part.
+
+What is Divide and Conquer?
+
+Imagine you have a huge book.
+
+Instead of reading 1000 pages together,
+
+you split it:
+
+1000
+
+↓
+
+500 + 500
+
+↓
+
+250 + 250 + 250 + 250
+
+↓
+
+...
+
+↓
+
+1 page
+
+Solve small problems first.
+
+Then combine them.
+
+That's Divide and Conquer.
+
+Merge Sort Steps
+
+Suppose
+
+arr = [8,3,6,1]
+Step 1
+
+Split
+
+[8,3]
+
+[6,1]
+Step 2
+
+Split again
+
+[8]
+
+[3]
+
+[6]
+
+[1]
+Step 3
+
+Merge
+
+[3,8]
+
+[1,6]
+Step 4
+
+Merge again
+
+[1,3,6,8]
+
+Sorted.
+
+The Recursive Function
+
+Today don't memorize this.
+
+Understand it.
+
+merge_sort(arr):
+
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr)//2
+
+    left = merge_sort(left_half)
+
+    right = merge_sort(right_half)
+
+    return merge(left,right)
+
+Notice something?
+
+This looks exactly like recursion.
+
+Because it is.
+
+Dry Run
+[8,3,6,1]
+
+↓
+
+merge_sort([8,3])
+
+merge_sort([6,1])
+
+↓
+
+merge_sort([8])
+
+merge_sort([3])
+
+↓
+
+Already sorted.
+
+Now merge.
+
+Important Observation
+
+Merge Sort has two recursive calls.
+
+Factorial had
+
+1 recursive call
+
+Merge Sort has
+
+2 recursive calls
+
+This is your first recursion tree.
+
+Practice Questions
+Q1
+
+Without coding,
+
+show how this array splits.
+
+arr = [4,2,7,1]
+
+Write every level.
+
+Example:
+
+[4,2,7,1]
+
+↓
+
+...
+Q2
+
+Again,
+
+without coding,
+
+show the merge process.
+
+[4]
+
+[2]
+
+[7]
+
+[1]
+
+↓
+
+?
+
+Q3
+
+What is the base condition of Merge Sort?
+
+No code.
+
+Just explain.
+
+⭐ Q4
+
+How many recursive calls does Merge Sort make from one function call?
+
+💻 LeetCode Easy
+Problem:
+Two Sum
+
+Yes 😄
+
+Again.
+
+But this time,
+
+I want both solutions.
+
+Level 1
+
+Brute Force
+
+Level 2
+
+Optimized Hashing
+
+Compare
+Method	Time	Space
+
+Fill this table.
+
+🧠 Brainstorming Question
+
+No coding.
+
+Suppose I ask:
+
+Find the second largest element.
+
+You know one solution.
+
+Now think:
+
+Can you find the second largest without sorting the array?
+
+Explain only your idea.
+
+No code.
