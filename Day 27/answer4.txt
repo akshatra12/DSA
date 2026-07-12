@@ -1,0 +1,2 @@
+4
+[1,1,1] is monotonic because the order is not changed in this array
