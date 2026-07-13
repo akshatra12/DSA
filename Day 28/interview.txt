@@ -1,0 +1,21 @@
+🔥 Interview Simulation
+
+I'm the interviewer.
+
+I'll ask you only one question.
+
+Why can't we use Binary Search to find duplicates in an unsorted array?
+
+answer:
+
+# we can apply binary search only when we have a sorted array if the array is not sorted algorithm will not worrk
+# eg: [5,9,3,6,1,8,2]
+# and target =9
+# left=0
+# right=6
+# mid=(0+6)//2=3
+# now check arr[mid]=6
+# 6<9
+# so according to algorithm target will be on right side of the mid
+# but in  this array target is left side of the mid 
+# hence the binary search is not work in unsortd array

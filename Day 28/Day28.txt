@@ -1,0 +1,143 @@
+Foundation Strengthening Day
+🎯 Goal
+
+Today there is no new major algorithm.
+
+Instead, we're going to strengthen everything you've learned over the last 27 days.
+
+Remember: Interviews don't ask, "Do you know Sliding Window?" They ask problems where you have to recognize that Sliding Window is the correct pattern.
+
+So today's focus is pattern recognition.
+
+🧠 Pattern Recognition Round
+
+For each question, don't write code immediately.
+
+Answer these first:
+
+Observation:
+Pattern:
+Why this pattern?
+Time Complexity:
+Space Complexity:
+
+Only then write the code.
+
+🔁 Revision 1 (Sliding Window + Hashing)
+arr = [1,2,2,3,4,5,2]
+k = 4
+Task
+
+Check whether the window having the maximum sum contains any duplicate element.
+
+Return:
+
+True
+
+or
+
+False
+🔁 Revision 2 (Merge Sort + First Unique)
+arr = [5,2,4,2,1,5,7]
+Task
+Sort the array using Merge Sort.
+Find the first unique element.
+🔁 Revision 3 (Binary Search + Prefix Sum)
+arr = [2,4,6,8,10,12]
+target = 8
+Task
+Find the index using Binary Search.
+Build the prefix sum array.
+Return the sum from index 0 to the found index.
+🌟 Main Challenge (Interview Style)
+
+This is today's most important question.
+
+arr = [8,3,5,1,9,6]
+Task
+
+Find
+
+Largest
+Second Largest
+
+without sorting.
+
+Rules
+No sorting
+No extra array
+One traversal only
+Before coding
+
+Answer these:
+
+Observation
+Pattern
+Algorithm
+Time Complexity
+Space Complexity
+💻 LeetCode Easy
+Problem: Contains Duplicate
+nums = [1,2,3,1]
+
+Return
+
+True
+
+if any duplicate exists.
+
+Otherwise
+
+False
+Then solve
+nums = [1,2,3,4]
+Then solve
+nums = [1,1,1,3,3,4]
+Bonus
+
+Can you solve it
+
+Using Hashing?
+Using Sorting?
+
+Compare both.
+
+🧠 Brainstorming Question
+
+Suppose I ask:
+
+Find the third largest element.
+
+You already know how to find the largest and second largest.
+
+Without coding, explain how you would extend your idea to find the third largest in a single traversal.
+
+🔥 Interview Simulation
+
+I'm the interviewer.
+
+I'll ask you only one question.
+
+Why can't we use Binary Search to find duplicates in an unsorted array?
+
+Answer in your own words.
+
+Don't search.
+
+Don't memorize.
+
+Just think.
+
+📚 Mini Theory
+
+Whenever you see a DSA problem, ask yourself these 7 questions:
+
+Is the array sorted?
+Do I need the maximum/minimum?
+Am I looking for a pair?
+Is there a fixed-size window?
+Am I searching for something?
+Are duplicates important?
+Can I solve it in one traversal?
+
+These questions will help you identify the correct pattern before you write any code.
