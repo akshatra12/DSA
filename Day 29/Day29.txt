@@ -1,0 +1,307 @@
+
+Day 29 – Introduction to Stack
+
+Today we're starting our first linear data structure after arrays.
+
+This is an important milestone because Stacks are used in:
+
+Expression evaluation (2 + 3 * 4)
+Undo/Redo in editors
+Browser Back button
+Function calls (Recursion internally uses a stack!)
+Parentheses matching
+DFS in graphs (later)
+🎯 Learning Goal
+
+By the end of today, you should understand:
+
+What is a Stack?
+Why do we need it?
+What operations does it support?
+How do we implement it in Python?
+When should we recognize a Stack problem?
+🧠 Imagine This
+
+You have a stack of plates.
+
+      🍽️  ← Top
+      🍽️
+      🍽️
+      🍽️
+
+If you want another plate, where do you put it?
+
+👉 On the top.
+
+If you want to remove a plate, which one comes out?
+
+👉 The top one.
+
+You cannot remove the middle plate first.
+
+Definition
+
+A Stack follows the principle:
+
+LIFO
+
+Last In, First Out
+
+Example:
+
+Push 10
+
+Stack:
+10
+Push 20
+
+20
+10
+Push 30
+
+30
+20
+10
+
+Now remove one element.
+
+Which one comes out?
+
+30
+
+Not 10.
+
+Not 20.
+
+Because it was inserted last.
+
+Stack Operations
+Operation	Meaning	Complexity
+Push	Insert on top	O(1)
+Pop	Remove from top	O(1)
+Peek/Top	View top element	O(1)
+isEmpty	Check if stack is empty	O(1)
+Size	Number of elements	O(1)
+
+Memorize this table. Interviewers ask it frequently.
+
+Stack in Python
+
+Python already provides an easy implementation using a list.
+
+stack = []
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+
+print(stack)
+
+Output:
+
+[10, 20, 30]
+
+Now:
+
+stack.pop()
+
+Output:
+
+30
+
+Remaining:
+
+[10,20]
+Why append() and pop()?
+
+Remember arrays?
+
+Appending at the end of a Python list is efficient.
+
+Removing from the end is also efficient.
+
+So Python lists naturally behave like a stack.
+
+Dry Run
+
+Initially
+
+[]
+
+Push 5
+
+[5]
+
+Push 10
+
+[5,10]
+
+Push 15
+
+[5,10,15]
+
+Pop
+
+15 removed
+
+Stack
+
+[5,10]
+
+Top
+
+10
+📝 Pattern Recognition
+
+Whenever you see words like:
+
+Undo
+Back
+Reverse order
+Nested brackets
+Last inserted
+Function calls
+
+Think:
+
+Maybe this is a Stack problem.
+
+🔁 Revision 1 (Binary Search + Hashing)
+arr = [2,4,6,8,10,12]
+target = 10
+Task
+Find the target using Binary Search.
+Store all visited middle elements in a dictionary.
+Return the dictionary.
+🔁 Revision 2 (Sliding Window + Prefix Sum)
+arr = [3,1,2,6,4,5]
+k = 3
+Task
+Find the maximum sum window.
+Find the range sum from index 2 to 5.
+Return both values.
+🌟 Stack Practice
+Q1
+
+Create an empty stack.
+
+Push
+
+10
+20
+30
+
+Print the stack.
+
+Q2
+
+Pop one element.
+
+Print:
+
+Removed element
+Remaining stack
+Q3
+
+Peek the top element without removing it.
+
+Q4
+
+Check whether the stack is empty.
+
+⭐ Q5
+
+Push
+
+5
+10
+15
+20
+
+Then pop twice.
+
+What is the final stack?
+
+Write the output before coding.
+
+💻 LeetCode Easy
+Valid Parentheses
+
+Given:
+
+s = "()[]{}"
+
+Return
+
+True
+
+Given
+
+s = "(]"
+
+Return
+
+False
+Don't code today.
+
+Just answer:
+
+Observation
+Pattern
+Why Stack?
+What information should be stored inside the stack?
+🧠 Brainstorming
+
+Without coding:
+
+Why is recursion called an implicit stack?
+
+Think about what happens when you call:
+
+fact(5)
+
+then
+
+fact(4)
+
+then
+
+fact(3)
+
+Where are those function calls waiting?
+
+🎤 Interview Question
+
+Suppose I ask:
+
+Why can't we implement a queue using only list.pop() from the end?
+
+Explain in your own words.
+
+📚 Pattern Recognition Challenge
+
+Identify the pattern only.
+
+Problem A
+
+Find the first negative number in every window of size k.
+
+Pattern?
+
+Problem B
+
+Find whether a string has balanced parentheses.
+
+Pattern?
+
+Problem C
+
+Find an element in a sorted array.
+
+Pattern?
+
+Problem D
+
+Find the maximum profit from stock prices.
+
+Pattern?
