@@ -1,0 +1,9 @@
+# 🌟 Queue vs Stack
+
+# Without coding, complete this table:
+
+# Feature	Stack	Queue
+# Rule	    lifo	 fifo
+# Insert    push    Enqueue
+# Remove	pop	    popleft
+# Real-life Example:	bunch of plates	 line for the prayer

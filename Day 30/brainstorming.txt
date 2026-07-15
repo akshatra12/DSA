@@ -1,0 +1,51 @@
+🧠 Brainstorming Challenge ⭐⭐⭐
+
+Suppose I ask:
+
+Reverse a Queue
+
+Can you use a Stack?
+
+Don't code.
+
+Just explain your idea.
+
+answer:
+if we conside that reversed queue as a stack means that queue worked a s stack because if we pop the element that element in queue is the first element
+
+Think about this.
+
+Queue
+
+1 2 3 4
+
+Take each element
+
+Dequeue
+
+↓
+
+Push into stack
+
+Stack becomes
+
+4
+3
+2
+1
+
+Now
+
+Pop from stack
+
+↓
+
+Enqueue into queue
+
+Final queue
+
+4 3 2 1
+
+That's the trick.
+
+You use the stack to reverse the order because a stack naturally reverses insertion order (LIFO).

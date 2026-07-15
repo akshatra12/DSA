@@ -1,0 +1,12 @@
+# Bonus Challenge (Pattern Recognition)
+
+
+# problem 1 = Monotonic Stack
+
+# problem 2 = two pointers
+
+
+# problem 3= Sliding Window and Hashing
+
+
+# problem 4= Variable Sliding Window

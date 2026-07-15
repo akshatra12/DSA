@@ -1,0 +1,52 @@
+🎤 Interview Corner
+
+Question
+
+Which is better?
+Dictionary OR  Set
+
+When finding duplicates.
+Explain.
+
+Answer:
+Actually, if the only question is "Have I seen this element before?"
+Then  set()  is slightly better. Because  it stores only keys.
+No values.
+Less memory.
+
+
+If interviewer asks
+
+Count frequency.
+
+Now use
+
+dict()
+
+because
+
+freq[x]+=1
+
+is possible.
+
+So
+
+Remember this rule.
+
+Set
+
+Finding duplicates
+
+Checking existence
+
+Unique elements
+
+Dictionary
+
+Frequency
+
+Indexes
+
+Mappings
+
+Counts

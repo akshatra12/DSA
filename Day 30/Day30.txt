@@ -1,0 +1,362 @@
+Day 30 — Welcome to the Next Level
+
+Congratulations! 🎉
+
+You've officially completed the Foundation Phase of DSA.
+
+Let's see what you've covered so far:
+
+✅ Python Basics
+✅ Loops
+✅ Arrays
+✅ Strings
+✅ Pattern Printing
+✅ Functions
+✅ Time Complexity
+✅ Recursion
+✅ Two Pointers
+✅ Sliding Window
+✅ Prefix Sum
+✅ Hashing
+✅ Binary Search
+✅ Bubble Sort
+✅ Selection Sort
+✅ Insertion Sort
+✅ Merge Sort
+✅ Kadane's Algorithm
+✅ Stack (Basics)
+
+That's a solid foundation.
+
+🎯 New Training System (Day 30+)
+
+From today, every day will follow this structure:
+
+Revision 1 (Mixed Concepts)
+
+↓
+
+Revision 2 (Mixed Concepts)
+
+↓
+
+New Topic
+
+↓
+
+LeetCode Easy
+
+↓
+
+Interview Corner
+
+↓
+
+Brainstorming Challenge
+
+Notice something?
+
+I'm no longer telling you which algorithm to use.
+
+You must recognize the pattern yourself.
+
+That's how interviews work.
+
+🔁 Revision 1 (Stack + Hashing)
+arr = [2,5,2,7,8,7,9]
+Task
+
+Find the first duplicate element.
+
+Then push every unique element into a stack.
+
+Finally print the stack.
+
+Before coding
+
+Write:
+
+Observation
+
+Pattern
+
+Algorithm
+
+Time Complexity
+
+Space Complexity
+🔁 Revision 2 (Merge Sort + Binary Search)
+arr = [14,3,9,7,21,18,5]
+target = 18
+Task
+Sort the array.
+Search for the target.
+Return
+(index, value)
+🌟 New Topic — Queue
+
+Today we're learning your second linear data structure.
+
+Imagine a Ticket Counter 🎫
+
+People stand like this:
+
+A
+B
+C
+D
+
+Who gets the ticket first?
+
+A
+
+Who joins later?
+
+D
+
+This is called
+
+FIFO
+First In
+
+First Out
+
+Unlike Stack,
+
+Stack:
+
+Last In
+
+First Out
+Queue Operations
+Operation	Meaning	Complexity
+Enqueue	Insert at rear	O(1)
+Dequeue	Remove from front	O(1)
+Front	First element	O(1)
+Rear	Last element	O(1)
+isEmpty	Check empty	O(1)
+
+Memorize these.
+
+Python Queue
+
+The best implementation is not a list.
+
+Instead use:
+
+from collections import deque
+
+queue = deque()
+
+Why?
+
+Because
+
+list.pop(0)
+
+is
+
+O(n)
+
+while
+
+deque.popleft()
+
+is
+
+O(1)
+
+This difference matters in interviews.
+
+Example
+from collections import deque
+
+queue = deque()
+
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+Queue
+
+10 20 30
+
+Now
+
+queue.popleft()
+
+removes
+
+10
+
+because Queue follows FIFO.
+
+Queue Dry Run
+
+Initially
+
+[]
+
+Enqueue
+
+5
+[5]
+
+Enqueue
+
+10
+[5,10]
+
+Enqueue
+
+15
+[5,10,15]
+
+Now
+
+popleft()
+
+Output
+
+5
+
+Remaining
+
+[10,15]
+Queue Practice
+Q1
+
+Create a queue.
+
+Insert
+
+10
+
+20
+
+30
+
+Print it.
+
+Q2
+
+Remove one element.
+
+Print
+
+Removed element
+Remaining queue
+Q3
+
+Print the front element.
+
+Q4
+
+Print the rear element.
+
+⭐ Q5
+
+Enqueue
+
+5
+
+10
+
+15
+
+20
+
+Remove two elements.
+
+Print the final queue.
+
+🌟 Queue vs Stack
+
+Without coding, complete this table:
+
+Feature	Stack	Queue
+Rule	?	?
+Insert	?	?
+Remove	?	?
+Real-life Example	?	?
+💻 LeetCode Easy
+Problem: Valid Anagram
+s = "anagram"
+
+t = "nagaram"
+
+Return
+
+True
+s = "rat"
+
+t = "car"
+
+Return
+
+False
+
+Don't code immediately.
+
+Answer these first:
+
+Observation
+Pattern
+Why?
+Brute Force Complexity
+Optimized Complexity
+🎤 Interview Corner
+
+Question
+
+Which is better?
+
+Dictionary
+
+OR
+
+Set
+
+When finding duplicates.
+
+Explain.
+
+🧠 Brainstorming Challenge ⭐⭐⭐
+
+Suppose I ask:
+
+Reverse a Queue
+
+Can you use a Stack?
+
+Don't code.
+
+Just explain your idea.
+
+🔥 Bonus Challenge (Pattern Recognition)
+
+Identify the pattern only.
+
+Problem 1
+
+Find the next greater element.
+
+Pattern?
+
+Problem 2
+
+Reverse words in a sentence.
+
+Pattern?
+
+Problem 3
+
+Find all anagrams in a string.
+
+Pattern?
+
+Problem 4
+
+Find the longest substring without repeating characters.
+
+Pattern?
