@@ -1,14 +1,35 @@
-# 🚀 DSA in Python – Logic Building Journey (Day 1 – Day 14)
+# 🚀 30 Days of Data Structures & Algorithms in Python
 
-> A structured Data Structures & Algorithms journey focused on strengthening problem-solving skills from scratch using Python. This repository documents my daily progress, concepts learned, and coding practice while preparing for technical interviews.
+<div align="center">
+
+### 💻 My DSA Journey | Python | Problem Solving | Interview Preparation
+
+*"The goal is not to memorize solutions, but to recognize patterns and solve unseen problems."*
+
+</div>
 
 ---
 
 # 📌 About
 
-This repository contains my day-by-day DSA practice using **Python**. Instead of memorizing solutions, I focus on understanding **problem-solving patterns** that are commonly used in coding interviews.
+This repository documents my **30-Day Data Structures & Algorithms (DSA) journey** in **Python**.
 
-**Current Progress:** ✅ Day 14 Completed
+Unlike a typical "solve one problem daily" challenge, this journey focuses on:
+
+* Building strong fundamentals
+* Understanding algorithmic patterns
+* Combining multiple concepts into a single problem
+* Writing observations, algorithms, and complexity analysis
+* Preparing for coding interviews
+
+Every day includes:
+
+* 📚 Revision of previous topics
+* 🧩 Mixed-pattern HackerRank-style problems
+* 💻 Coding implementation
+* 🧠 Brainstorming questions
+* 🎤 Interview questions
+* 📖 LeetCode practice
 
 ---
 
@@ -18,250 +39,343 @@ This repository contains my day-by-day DSA practice using **Python**. Instead of
 
 ---
 
-# 📅 Learning Progress
+# 📅 30-Day Learning Roadmap
 
-## ✅ Day 1 – Python Fundamentals
-
-* Variables & Data Types
-* Input / Output
-* Conditional Statements
-* Basic Logic Building
-
----
-
-## ✅ Day 2 – Loops
-
-* `for` Loop
-* `while` Loop
-* Nested Loops
-* Pattern Printing
-
----
-
-## ✅ Day 3 – Functions
-
-* Function Creation
-* Parameters
-* Return Values
-* Scope
-
----
-
-## ✅ Day 4 – Arrays
-
-* Array Traversal
-* Sum of Elements
-* Maximum Element
-* Minimum Element
-
----
-
-## ✅ Day 5 – Strings
-
-* String Traversal
-* Reverse String
-* Character Count
-* Vowel Count
+| Day    | Topics                                                  |
+| ------ | ------------------------------------------------------- |
+| Day 1  | Python Basics, Variables, Input/Output, Conditions      |
+| Day 2  | Loops (for & while)                                     |
+| Day 3  | Functions                                               |
+| Day 4  | Arrays (Lists)                                          |
+| Day 5  | Array Traversal                                         |
+| Day 6  | Linear Search                                           |
+| Day 7  | Frequency Dictionary (Hashing)                          |
+| Day 8  | Duplicate Detection                                     |
+| Day 9  | Palindrome (Two Pointers)                               |
+| Day 10 | Recursion Basics                                        |
+| Day 11 | Factorial                                               |
+| Day 12 | Sum of N Numbers                                        |
+| Day 13 | Power using Recursion                                   |
+| Day 14 | Prefix Sum                                              |
+| Day 15 | Sliding Window                                          |
+| Day 16 | Binary Search (Iterative)                               |
+| Day 17 | Binary Search (Recursive)                               |
+| Day 18 | Bubble Sort                                             |
+| Day 19 | Selection Sort                                          |
+| Day 20 | Insertion Sort                                          |
+| Day 21 | Merge Two Sorted Arrays                                 |
+| Day 22 | Hash Set & Dictionary                                   |
+| Day 23 | Kadane's Algorithm                                      |
+| Day 24 | Two Sum (Brute Force & Optimized)                       |
+| Day 25 | Merge Sort                                              |
+| Day 26 | Matrix (2D Arrays)                                      |
+| Day 27 | Pattern Recognition & Mixed Problems                    |
+| Day 28 | Best Time to Buy and Sell Stock, Second Largest Element |
+| Day 29 | Stack                                                   |
+| Day 30 | Queue + Linked List Fundamentals                        |
 
 ---
 
-## ✅ Day 6 – Hashing (Dictionary)
+# 📚 Topics Covered
 
-* Frequency Counting
-* Character Frequency
-* Duplicate Detection
-* Dictionary Operations
+## ✅ Arrays
 
----
-
-## ✅ Day 7 – Logic Building
-
-* Basic Array Problems
-* String Problems
-* Interview Style Practice
-
----
-
-## ✅ Day 8 – Array Practice
-
-* Largest Element
-* Smallest Element
-* Frequency Count
-* Reverse Array
-
----
-
-## ✅ Day 9 – Searching & Practice
-
-* Linear Search
-* Counting Occurrences
-* Array-Based Logic Questions
-
----
-
-## ✅ Day 10 – Revision
-
-* Arrays
-* Strings
-* Hashing
-* Time Complexity Basics
-
----
-
-## ✅ Day 11 – Pattern Recognition
-
-* Choosing the Correct Approach
-* Problem Analysis
-* Improving Logic Building
-
----
-
-## ✅ Day 12 – Array Interview Questions
-
-Implemented:
-
-* Reverse Array
-* Largest Element
-* Smallest Element
-* Count Frequency
+* Traversal
+* Sum of elements
+* Maximum & Minimum
 * Second Largest Element
-
----
-
-## ✅ Day 13 – Two Pointers
-
-### Learned
-
-* Two Pointer Technique
-* Pointer Movement
-* Dry Run Method
-
-### Problems Solved
-
 * Reverse Array
+* Duplicate Detection
+* Unique Elements
+
+---
+
+## ✅ Hashing
+
+* Dictionary
+* Frequency Count
+* Hash Set
+* Duplicate Detection
+* First Unique Element
+* Two Sum
+* Character Frequency
+
+---
+
+## ✅ Two Pointers
+
+* Palindrome
 * Reverse String
-* Palindrome Check
-* Count Swaps
-* Non-Palindrome Detection
+* Reverse Vowels
+* Array Reversal
 
 ---
 
-## ✅ Day 14 – Sliding Window ⭐
+## ✅ Sliding Window
 
-### Concept Learned
-
-The **Sliding Window** technique efficiently solves problems involving **consecutive elements** in an array.
-
-Instead of recalculating every window from scratch (**O(n²)**), we reuse the previous window's result to achieve **O(n)** complexity.
-
-### Problems Solved
-
-* Maximum Sum of 2 Consecutive Elements
-* Maximum Sum of 3 Consecutive Elements
-* Minimum Sum of 2 Consecutive Elements
-* Average of Every Window of Size 3
-* Maximum Sum of 4 Consecutive Elements
-
-### Key Learning
-
-* Fixed Size Sliding Window
-* Window Expansion & Shift
-* Window Sum Optimization
-* Reducing Time Complexity from **O(n²)** → **O(n)**
+* Fixed Size Window
+* Maximum Window Sum
+* Window Optimization
 
 ---
 
-# 🧠 DSA Patterns Learned
+## ✅ Prefix Sum
 
-| Pattern              | Status |
-| -------------------- | ------ |
-| Array Traversal      | ✅      |
-| Hashing (Dictionary) | ✅      |
-| Two Pointers         | ✅      |
-| Sliding Window       | ✅      |
+* Prefix Array
+* Range Sum Query
 
 ---
 
-# ⚡ Time Complexities Covered
+## ✅ Binary Search
 
-| Concept            | Complexity |
-| ------------------ | ---------- |
-| Traversal          | O(n)       |
-| Largest / Smallest | O(n)       |
-| Frequency Count    | O(n)       |
-| Reverse Array      | O(n)       |
-| Palindrome Check   | O(n)       |
-| Sliding Window     | O(n)       |
+### Iterative
+
+* Search Target
+* Return Index
+
+### Recursive
+
+* Divide & Conquer
+* Base Condition
+* Recursive Search
+
+---
+
+## ✅ Recursion
+
+* Print Numbers
+* Reverse Printing
+* Factorial
+* Sum of N Numbers
+* Power Function
+
+---
+
+## ✅ Sorting Algorithms
+
+### Bubble Sort
+
+* Ascending
+* Descending
+* Swap Count
+* Complexity Analysis
+
+### Selection Sort
+
+* Minimum Selection
+* Ascending
+* Descending
+
+### Insertion Sort
+
+* Key Insertion
+* Best Case
+* Worst Case
+
+### Merge Sort
+
+* Divide
+* Merge
+* Recursive Sorting
+
+---
+
+## ✅ Matrix (2D Arrays)
+
+* Traversal
+* Sum
+* Maximum Element
+* Count Even Numbers
+
+---
+
+## ✅ Kadane's Algorithm
+
+* Maximum Subarray Sum
+
+---
+
+## ✅ Stack
+
+Topics Covered:
+
+* Push
+* Pop
+* Peek
+* LIFO Principle
+
+Problems:
+
+* Parentheses Concept
+* Reverse Thinking
+* Stack Simulation
+
+---
+
+## ✅ Queue
+
+Topics Covered:
+
+* Enqueue
+* Dequeue
+* Front
+* Rear
+* FIFO Principle
+
+Problems:
+
+* Queue Traversal
+* Queue Operations
+* Queue vs Stack
+
+---
+
+## ✅ Linked List (Foundation)
+
+Topics Covered:
+
+* Node
+* Head
+* Tail
+* Current Pointer
+* Traversal
+* Memory Representation
+* Insert at Beginning
+* Insert at End
+* Delete First Node (concept)
+* Pointer Visualization
+
+---
+
+# 🧩 Algorithmic Patterns Learned
+
+* Hashing
+* Two Pointers
+* Sliding Window
+* Prefix Sum
+* Binary Search
+* Recursion
+* Divide & Conquer
+* Sorting
+* Stack
+* Queue
+* Basic Linked List Pointer Manipulation
+
+---
+
+# 💻 Coding Problems Practiced
+
+* Duplicate Element
+* First Unique Element
+* Palindrome
+* Reverse Vowels
+* Two Sum
+* Maximum Window Sum
+* Prefix Sum Query
+* Binary Search
+* Merge Two Sorted Arrays
+* Merge Sort
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Kadane's Algorithm
+* Monotonic Array
+* Best Time to Buy & Sell Stock
+* Second Largest Element
+* Matrix Problems
+* Stack Operations
+* Queue Operations
+* Linked List Basics
+
+---
+
+# 📖 LeetCode Problems Studied
+
+* **#1** Two Sum
+* **#121** Best Time to Buy and Sell Stock
+* **#217** Contains Duplicate
+* **#242** Valid Anagram
+* **#53** Maximum Subarray (Kadane's Algorithm)
+* **#876** Middle of the Linked List (Concept)
+* **#206** Reverse Linked List (Discussion)
+* **#203** Remove Linked List Elements (Concept)
+* **#83** Remove Duplicates from Sorted List (Concept)
+
+---
+
+# 🧠 Problem-Solving Workflow
+
+For every problem, I follow this structured approach:
+
+1. Observation
+2. Pattern Recognition
+3. Why this Pattern?
+4. Algorithm
+5. Time Complexity
+6. Space Complexity
+7. Python Implementation
+8. Edge Cases
+9. Self Review
+
+---
+
+# 📈 Skills Developed
+
+* Pattern Recognition
+* Algorithm Design
+* Complexity Analysis
+* Debugging
+* Pointer Visualization
+* Recursion Thinking
+* Interview-Style Problem Solving
+* Combining Multiple DSA Concepts
 
 ---
 
 # 📂 Repository Structure
 
 ```text
-DSA/
-│
-├── Day01/
-├── Day02/
-├── Day03/
-├── Day04/
-├── Day05/
-├── Day06/
-├── Day07/
-├── Day08/
-├── Day09/
-├── Day10/
-├── Day11/
-├── Day12/
-├── Day13/
-├── Day14/
+📦 DSA-Python
+├── Day-01
+├── Day-02
+├── Day-03
+├── ...
+├── Day-29
+├── Day-30
 └── README.md
 ```
 
 ---
 
-# 🎯 Goals
+# 🚀 Upcoming Roadmap
 
-* Strengthen problem-solving skills.
-* Master common DSA patterns.
-* Prepare for coding interviews.
-* Solve LeetCode & HackerRank problems consistently.
-* Build confidence in writing optimized solutions.
+The learning journey continues with:
 
----
-
-# 🚀 Upcoming Topics
-
-* Prefix Sum
-* Binary Search
-* Recursion
-* Bubble Sort
-* Selection Sort
-* Insertion Sort
-* Linked Lists
-* Stack
-* Queue
+* Advanced Linked List
 * Trees
+* Binary Search Trees
+* Heaps / Priority Queue
 * Graphs
 * Dynamic Programming
+* Blind 75
+* NeetCode 150
+* Company Interview Questions
 
 ---
 
-# 📊 Progress Overview
+# 🎯 Goal
 
-* ✅ **Days Completed:** 14
-* 📚 **DSA Patterns Learned:** 4
-
-  * Array Traversal
-  * Hashing
-  * Two Pointers
-  * Sliding Window
-* 💻 **Language:** Python
-* 🎯 **Current Focus:** Building strong algorithmic thinking and mastering interview-ready DSA patterns.
+This repository is focused on building strong DSA fundamentals and preparing for software engineering interviews by emphasizing **understanding, pattern recognition, and consistent practice** rather than memorizing solutions.
 
 ---
 
-## ⭐ Connect With Me
+## 👨‍💻 Author
 
-If you're also learning DSA, feel free to explore this repository, follow my progress, and learn along the journey. Contributions, suggestions, and feedback are always welcome!
+**Akshatra Gupta**
 
-**Happy Coding! 🚀**
+* 🎓 B.Tech CSE Student
+* 🐍 Python Developer
+* 💻 DSA Learner
+* 🔐 Cybersecurity Enthusiast
+
+⭐ **If you find this repository useful, consider giving it a star!**
