@@ -1,0 +1,14 @@
+1
+node is the one element of linked list
+
+2
+head is the first node of linked list
+
+3
+tail us the last  of linnodeked list
+
+4
+because each node consist value and address of next node so we can't access the the node directly if we need to access the node we need to point their address
+5
+None
+

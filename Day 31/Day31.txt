@@ -1,0 +1,186 @@
+Day 31 – Linked Lists (Intermediate Phase Begins)
+
+Today we're entering one of the most important interview topics.
+
+🧠 Imagine This
+
+An array looks like this:
+
+[10][20][30][40]
+
+Each element is stored next to each other in memory.
+
+To reach 30, you simply use:
+
+arr[2]
+
+Easy.
+
+A Linked List is different.
+
+Imagine treasure maps.
+
+10 ----> 20 ----> 30 ----> 40 ----> None
+
+Each box stores:
+
+the value
+the address of the next box
+
+We call each box a Node.
+
+Node Structure
+
+Every node has two parts.
+
++---------+---------+
+|  Data   |  Next   |
++---------+---------+
+
+Example
+
++----+------+
+| 10 |  ●---|------+
++----+------+      |
+                   v
+               +----+------+
+               | 20 |  ●---|------+
+               +----+------+      |
+                                  v
+                              +----+------+
+                              | 30 | None |
+                              +----+------+
+Why do we need Linked Lists?
+
+Suppose you have an array:
+
+[10,20,30,40]
+
+Insert 25.
+
+Array becomes
+
+[10,20,25,30,40]
+
+Many elements may need to shift.
+
+In a linked list:
+
+20 → 30
+
+becomes
+
+20 → 25 → 30
+
+Only a few pointer updates.
+
+New Vocabulary
+
+Memorize these:
+
+Term	Meaning
+Node	One element
+Head	First node
+Tail	Last node
+Next	Pointer to next node
+None	End of list
+Python Class
+
+Today's only new syntax:
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+Don't worry if this looks new. We'll build it step by step.
+
+🎯 Day 31 Tasks
+🔁 Revision 1 (Queue + Hashing)
+arr = [4,1,4,2,3,2,5]
+
+Task:
+
+Find the first duplicate.
+Store all unique elements in a Queue.
+🔁 Revision 2 (Binary Search + Valid Anagram)
+Check whether two strings are anagrams.
+If they are, search for a target in a sorted array.
+🌟 Linked List Questions
+Q1 (Theory)
+
+What is a Node?
+
+Explain in your own words.
+
+Q2
+
+What is the Head?
+
+Q3
+
+What is the Tail?
+
+Q4
+
+Why can't we directly access the 5th node like
+
+node[5]
+
+?
+
+Think carefully.
+
+Q5
+
+Complete this:
+
+10 → 20 → 30 → ?
+
+What comes after the last node?
+
+💻 LeetCode Easy
+Problem: Remove Duplicates from Sorted Array
+nums = [1,1,2]
+
+Expected:
+
+[1,2]
+
+Another example:
+
+[0,0,1,1,1,2,2,3,3,4]
+
+becomes
+
+[0,1,2,3,4]
+
+Don't code.
+
+Just answer:
+
+Observation
+Pattern
+Why?
+Brute Force
+Better Approach
+🎤 Interview Corner
+
+Which is faster for random access?
+
+Array
+Linked List
+
+Explain why, not just which one.
+
+🧠 Brainstorming
+
+Suppose you have:
+
+10 → 20 → 30 → 40
+
+How would you insert 25 between 20 and 30?
+
+No code.
+
+Just explain the steps.
