@@ -1,0 +1,4 @@
+Interview Question
+1.insert the beginning with the help head pointer and shift only one pointer to insert in the begginning
+2.search for a value
+3 insert at the end(without tail pointer) because we need to shift all the pointer to reach the end of linked list and it will take a lot of time

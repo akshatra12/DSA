@@ -1,0 +1,257 @@
+Day 32 — Linked Lists (Coding Begins)
+
+Today we'll write our first Linked List. Don't worry about memorizing everything. Focus on understanding what each line does.
+
+🧠 Today's Concept: Creating a Node
+
+Until now we've used arrays:
+
+arr = [10,20,30]
+
+A Linked List stores each value inside a Node.
+
+Each node has:
+
+data → the value
+next → address of the next node
+
+Visual:
+
++------+-------+
+| Data | Next  |
++------+-------+
+|  10  |   ●--------+
++------+-------+    |
+                    v
+              +------+-------+
+              |  20  |   ●--------+
+              +------+-------+    |
+                                  v
+                            +------+-------+
+                            |  30  | None  |
+                            +------+-------+
+Step 1: Create a Node Class
+
+Read this carefully.
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+Meaning:
+
+When we write
+
+node = Node(10)
+
+Python creates
+
+Data = 10
+
+Next = None
+Step 2: Connect Nodes
+
+Suppose
+
+a = Node(10)
+b = Node(20)
+c = Node(30)
+
+Initially
+
+10    20    30
+
+None  None  None
+
+Now connect them
+
+a.next = b
+b.next = c
+
+Result
+
+10 → 20 → 30 → None
+Step 3: Traversing a Linked List
+
+Suppose
+
+Head
+
+↓
+
+10 → 20 → 30 → None
+
+How do we print every value?
+
+Think like this:
+
+Current = Head
+
+Print Current
+
+Move to Next
+
+Repeat
+
+Until Current becomes None
+
+This idea is the foundation of every linked list problem.
+
+Common Mistakes
+❌ Mistake 1
+current = current.next.next
+
+You skip nodes.
+
+❌ Mistake 2
+
+Forget to move
+
+current = current.next
+
+Infinite loop.
+
+❌ Mistake 3
+while current.next:
+
+This misses the last node.
+
+Instead think carefully about when traversal should stop.
+
+Revision 1 (Merge Sort + Binary Search)
+Observation
+
+Sort an unsorted array.
+
+If the target exists,
+
+return its index in the sorted array.
+
+Otherwise return -1.
+
+arr = [14,3,8,1,20,7]
+target = 8
+Revision 2 (Sliding Window + Hashing)
+
+Find the window of size k with the maximum sum.
+
+Now check:
+
+Are all elements inside that maximum-sum window unique?
+
+arr = [2,5,2,7,8,7,9]
+k = 3
+
+Return
+
+Maximum Window
+
+Is Unique?
+Linked List Questions
+Q1
+
+Create three nodes
+
+10 → 20 → 30
+
+Connect them.
+
+Print
+
+10
+20
+30
+Q2
+
+Create
+
+5 → 10 → 15 → 20
+
+Print only
+
+15
+
+(Hint: move from the head.)
+
+Q3
+
+Count the number of nodes.
+
+Example
+
+10 → 20 → 30 → 40
+
+Output
+
+4
+Q4
+
+Find the largest value.
+
+Example
+
+12 → 8 → 25 → 10
+
+Output
+
+25
+Q5
+
+Find the sum of all nodes.
+
+Example
+
+5 → 10 → 15
+
+Output
+
+30
+🌟 LeetCode of the Day
+LeetCode #206 – Reverse Linked List
+
+Don't code yet.
+
+Read the problem and answer these questions:
+
+Observation
+
+What is the problem asking?
+
+Pattern
+
+Which topic do you think it belongs to?
+
+Brute Force
+
+How would you solve it without worrying about efficiency?
+
+Better Approach
+
+Can you think of a pointer-based solution?
+
+(No code yet.)
+
+🎯 Interview Question
+
+Which operation is faster in a linked list?
+
+Insert at the beginning
+Insert at the end (without a tail pointer)
+Search for a value
+
+Arrange them from fastest to slowest and explain why.
+
+🧠 Brainstorming Challenge
+
+Suppose you have:
+
+10 → 20 → 30 → 40 → None
+
+Without using an array or list,
+
+how would you print it in reverse order?
+
+Don't write code.
+
+Just explain your idea.
