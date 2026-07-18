@@ -1,0 +1,2 @@
+Interview Question
+if we are using tail them deleting last node and first node both are easy if not then deleting first node is easy

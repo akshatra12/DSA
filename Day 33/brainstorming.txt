@@ -1,0 +1,1 @@
+we can solve this with the help of slow and fast pointer

@@ -1,0 +1,402 @@
+Day 33 – Linked List Coding Begins
+
+Welcome to the Intermediate Phase.
+
+From today onward, we're going to write actual Linked List code.
+
+🧠 Before Coding (Very Important)
+
+Remember this picture.
+
+head
+ |
+ v
+10 ───► 20 ───► 30 ───► None
+
+Every node has
+
+Data
+Next Pointer
+
+Nothing else.
+
+There is no index.
+
+So whenever you need another node,
+
+you move using
+
+current = current.next
+Today's Goal
+
+Today you will learn only three things.
+
+Create Nodes
+Connect Nodes
+Traverse the Linked List
+
+Nothing else.
+
+Master these three and the remaining Linked List questions become much easier.
+
+Step 1 — Create a Node
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+Remember:
+
+Node(10)
+
+↓
+
++---------+
+| Data=10 |
+| Next=None|
++---------+
+Step 2 — Connect Nodes
+
+Example
+
+a = Node(10)
+b = Node(20)
+c = Node(30)
+
+Currently
+
+10    20    30
+
+Nothing is connected.
+
+Now connect
+
+a.next = b
+b.next = c
+
+Memory
+
+a
+↓
+
+10 →20→30→None
+
+Now
+
+head = a
+
+The Linked List is complete.
+
+Step 3 — Traversing
+
+This is the most important algorithm.
+
+Imagine
+
+head
+
+↓
+
+10→20→30→40→None
+
+We never do
+
+arr[2]
+
+Instead
+
+current = head
+
+Then
+
+current
+
+↓
+
+10
+
+Print
+
+Move
+
+↓
+
+20
+
+Print
+
+Move
+
+↓
+
+30
+
+Print
+
+Move
+
+↓
+
+40
+
+Print
+
+Move
+
+↓
+
+None
+
+Stop.
+
+Traversal Algorithm
+
+Don't memorize.
+
+Understand.
+
+Start from Head
+
+↓
+
+Print current node
+
+↓
+
+Move current to next node
+
+↓
+
+Repeat until current becomes None
+
+That's it.
+
+Every Linked List problem starts with this idea.
+
+🌟 Dry Run
+
+Suppose
+
+head
+
+↓
+
+5→10→15→20→None
+
+Iteration 1
+
+Current
+
+↓
+
+5
+
+Print
+
+5
+
+Move
+
+current=current.next
+
+Now
+
+Current
+
+↓
+
+10
+
+Iteration 2
+
+Print
+
+10
+
+Move
+
+↓
+
+15
+
+Print
+
+↓
+
+20
+
+Print
+
+↓
+
+None
+
+Loop ends.
+
+Common Interview Mistakes
+Mistake 1
+while current.next:
+
+Question:
+
+Will this print the last node?
+
+Think.
+
+Mistake 2
+
+Forget
+
+current=current.next
+
+Infinite loop.
+
+Mistake 3
+
+Changing
+
+head=head.next
+
+instead of
+
+current=current.next
+
+If you move head, you'll lose the beginning of the list.
+
+Revision 1 (Merge Sort + Binary Search)
+arr = [9,2,7,4,1,6]
+target = 7
+
+Task:
+
+Sort using Merge Sort.
+Search using Binary Search.
+Return the value and its index in the sorted array.
+Revision 2 (Hashing + Queue)
+arr = [3,5,3,2,7,2,8]
+
+Task:
+
+Find the first duplicate.
+Store every unique element in a Queue.
+Return the Queue size.
+🌟 Linked List Questions
+Q1
+
+Create
+
+10→20→30→None
+
+using Nodes.
+
+Q2
+
+Traverse the Linked List.
+
+Print
+
+10
+20
+30
+
+(Hint: Use current.)
+
+Q3
+
+Count the number of nodes.
+
+Example
+
+5→10→15→20
+
+Output
+
+4
+Q4
+
+Find the maximum value.
+
+Example
+
+8→12→5→20→9
+
+Output
+
+20
+Q5
+
+Find the sum of all nodes.
+
+Example
+
+2→4→6→8
+
+Output
+
+20
+🌟 LeetCode of the Day
+LeetCode #83 – Remove Duplicates from Sorted List (Easy)
+
+Notice carefully.
+
+This is NOT the array version.
+
+This is a Linked List.
+
+Example
+1→1→2
+
+Output
+
+1→2
+
+Another
+
+1→1→2→3→3
+
+Output
+
+1→2→3
+Your Task
+
+Don't code.
+
+Answer:
+
+Observation
+
+What is the problem asking?
+
+Pattern
+
+Which topic does it belong to?
+
+Brute Force
+
+How would you solve it without worrying about efficiency?
+
+Better Approach
+
+How can pointers help?
+
+🌟 Interview Question
+
+Which is easier?
+
+Deleting the first node
+
+or
+
+Deleting the last node
+
+Explain why.
+
+🧠 Brainstorming Challenge
+
+Suppose
+
+10→20→30→40→None
+
+Without using Python,
+
+explain how you would find the middle node.
