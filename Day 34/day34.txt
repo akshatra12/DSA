@@ -1,0 +1,229 @@
+🚀 Day 34
+🟢 HackerRank Revision Challenge 1
+Problem
+
+You are given a sorted array.
+
+arr = [2,4,6,8,10,12,14]
+target = 10
+Task
+Find the target using Binary Search.
+If found, calculate the prefix sum from index 0 to that index.
+Return both
+(index, prefix_sum)
+Example
+
+Target
+
+10
+
+Index
+
+4
+
+Prefix Sum
+
+2+4+6+8+10
+
+Return
+
+(4,30)
+
+Concepts mixed
+
+Binary Search
+Prefix Sum
+
+Difficulty ⭐⭐
+
+🟢 HackerRank Revision Challenge 2
+
+Given
+
+arr = [3,7,2,8,5,6,1]
+k = 3
+Task
+Find the maximum sum window.
+Sort only that window using Merge Sort.
+Return the sorted window.
+
+Example
+
+Window
+
+[8,5,6]
+
+Return
+
+[5,6,8]
+
+Concepts
+
+Sliding Window
+Merge Sort
+
+Difficulty ⭐⭐⭐
+
+📚 New Concept
+Linked List Insertion at Beginning
+
+Current
+
+Head
+
+↓
+
+10 →20→30→None
+
+Insert
+
+5
+
+Final
+
+Head
+
+↓
+
+5→10→20→30→None
+Think First
+
+Which pointer changes?
+
+Only two things happen.
+
+Step 1
+
+new_node.next = head
+
+Now
+
+5→10→20→30
+
+But Head still points to 10.
+
+Step 2
+
+head = new_node
+
+Now
+
+Head
+
+↓
+
+5→10→20→30
+
+Insertion complete.
+
+Practice Questions
+Q1
+
+Create
+
+10→20→30
+
+Insert
+
+5
+
+Print
+
+5→10→20→30
+Q2
+
+Insert
+
+100
+
+into
+
+None
+
+Output
+
+100→None
+Q3
+
+Insert
+
+7
+
+into
+
+9→12→15
+Q4
+
+Count the nodes after insertion.
+
+Q5
+
+Find the sum after insertion.
+
+🌟 LeetCode of the Day
+LeetCode #21 – Merge Two Sorted Lists
+
+Difficulty: Easy
+
+This is one of the Top 10 most asked Linked List interview questions.
+
+Example
+
+List 1
+
+1→2→4
+
+List 2
+
+1→3→4
+
+Output
+
+1→1→2→3→4→4
+Your Task
+
+Don't code yet.
+
+Write:
+
+Observation
+
+What is the problem asking?
+
+Pattern
+
+Which DSA pattern fits?
+
+Brute Force
+
+How would you solve it using the concepts you've already learned?
+
+Better Approach
+
+Can you reuse the merge step of Merge Sort?
+
+(Hint: Think about it. Don't implement it yet.)
+
+🎤 Interview Question
+
+Why is insertion at the beginning of a linked list O(1), while insertion at the end of a singly linked list (without a tail pointer) is O(n)?
+
+Explain using pointer movement, not just the complexity.
+
+🧠 Brainstorming Challenge
+
+Suppose you have
+
+10→20→30→40→50
+
+Without using code,
+
+how would you find the 3rd node from the end?
+
+Explain your first idea. Don't worry about the optimal solution yet.
+
+
+answer of 
+Interview Question
+when we insert the value from the beggining then we can simply first point new node to head and then head = new_node that's why complexity is (1)
+but when we insert the new node to the last of list then we need to shift every pointer with the help of loop and we need to traverse every value of the list so that  complexity is O(n)
