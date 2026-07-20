@@ -1,0 +1,29 @@
+🌟 LeetCode of the Day
+LeetCode #876 – Middle of the Linked List
+
+Difficulty: Easy
+
+Problem
+
+Given
+
+1 → 2 → 3 → 4 → 5
+
+Return
+
+3
+
+Given
+
+1 → 2 → 3 → 4 → 5 → 6
+
+Return
+
+4
+
+answer:
+observation: we have a linked list we start traversing and find the middle element of the list
+Pattern: slow and fast pointer
+Brute force: use a count variable and we find the mid element and also use Hashing
+
+Better Approach: we can use salow and fast pointer

@@ -1,0 +1,287 @@
+Day 35
+🟢 HackerRank Revision Challenge 1 ⭐⭐
+Topics
+Insertion Sort
+Binary Search
+Recursion (Factorial)
+Problem
+arr = [8,3,6,1,9,2]
+target = 6
+Task
+Sort the array using Insertion Sort.
+Find the index of target using Binary Search.
+Return the factorial of that index.
+
+Example:
+
+Sorted Array
+
+[1,2,3,6,8,9]
+
+Index of 6 = 3
+
+Factorial = 6
+🟢 HackerRank Revision Challenge 2 ⭐⭐⭐
+Topics
+Palindrome
+Two Pointers
+Hashing
+Problem
+word = "madam"
+Task
+Check whether the string is a palindrome using Two Pointers.
+If it is not a palindrome, return "Not Palindrome".
+If it is a palindrome:
+Build a frequency dictionary.
+Return the first non-repeating character.
+If every character repeats, return "No Unique Character".
+
+Example
+
+word = "level"
+
+Output
+
+v
+
+Example
+
+word = "madam"
+
+Output
+
+d
+📘 New Topic
+Linked List – Insert at End
+
+Yesterday you inserted at the beginning.
+
+Today we'll insert at the end.
+
+Current List
+Head
+
+↓
+
+10 → 20 → 30 → None
+
+Insert
+
+40
+
+Expected
+
+10 → 20 → 30 → 40 → None
+Before Coding
+Draw it
+
+Current
+
+Head
+
+↓
+
+10 → 20 → 30 → None
+
+New Node
+
+40 → None
+
+Question
+
+Where should
+
+new_node.next
+
+point?
+
+Answer:
+
+None
+
+Because it becomes the last node.
+
+Which pointer changes?
+
+Think carefully.
+
+We do NOT change
+
+head
+
+We do NOT change
+
+current
+
+Only one pointer changes.
+
+Which one?
+
+👉 The next pointer of the current last node.
+
+Example
+
+Before
+
+30 → None
+
+After
+
+30 → 40 → None
+
+Only
+
+30.next
+
+changes.
+
+Algorithm
+Create a new node.
+If head == None, make the new node the head.
+Otherwise:
+Start from head.
+Move until you reach the last node (current.next == None).
+Connect the last node to the new node.
+Return the updated head.
+Practice Questions
+Q1
+
+Insert
+
+40
+
+into
+
+10 → 20 → 30
+
+Print the list.
+
+Q2
+
+Insert
+
+100
+
+into an empty linked list.
+
+Q3
+
+Insert
+
+25
+
+into
+
+5 → 10 → 15 → 20
+
+Count the nodes afterward.
+
+Q4
+
+Insert
+
+50
+
+into
+
+10 → 20 → 30
+
+Find the maximum value.
+
+Q5
+
+Insert
+
+7
+
+into
+
+1 → 2 → 3 → 4
+
+Find the sum of all nodes.
+
+🌟 LeetCode of the Day
+LeetCode #876 – Middle of the Linked List
+
+Difficulty: Easy
+
+Problem
+
+Given
+
+1 → 2 → 3 → 4 → 5
+
+Return
+
+3
+
+Given
+
+1 → 2 → 3 → 4 → 5 → 6
+
+Return
+
+4
+
+(The problem specifies that when there are two middle nodes, return the second one.)
+
+Your Task (No Code)
+
+Write:
+
+Observation
+
+What is the problem asking?
+
+Pattern
+
+Which approach comes to your mind?
+
+(Don't worry if it isn't optimal.)
+
+Brute Force
+
+How would you solve it using the concepts you already know?
+
+Better Approach
+
+Can you think of a way to find the middle without counting twice?
+
+(Hint: Think about using two pointers that move at different speeds. We haven't learned it yet—just think about the idea.)
+
+🎤 Interview Question
+
+Suppose you have
+
+10 → 20 → 30 → None
+
+Why do we stop the traversal using
+
+while current.next:
+
+when finding the last node, but use
+
+while current:
+
+when printing every node?
+
+Explain the difference.
+
+🧠 Brainstorming Challenge
+
+You know how to:
+
+Insert at the beginning
+Insert at the end
+
+Now think:
+
+How would you insert a node after the value 20?
+
+Don't write code.
+
+Just explain:
+
+Which node do you search for?
+Which pointers change?
+In what order would you change them?

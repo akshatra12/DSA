@@ -1,0 +1,22 @@
+🎤 Interview Question
+
+Suppose you have
+
+10 → 20 → 30 → None
+
+Why do we stop the traversal using
+
+while current.next:
+
+when finding the last node, but use
+
+while current:
+
+when printing every node?
+
+answer:
+
+when we print the element we need to traverse the list to the last 
+we need to print the data of the last node 
+when we insert element at last we need to tell the pointer that he needs to stop just before the None value
+if we reach the none then the new node will not be inserted
