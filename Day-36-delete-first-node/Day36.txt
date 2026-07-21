@@ -1,0 +1,235 @@
+Day 36
+🟢 HackerRank Revision Challenge 1 ⭐⭐
+Topics
+Selection Sort
+Binary Search
+Prefix Sum
+Problem
+arr = [9,3,7,1,8,2]
+target = 7
+Task
+Sort the array using Selection Sort.
+Find the index of target using Binary Search.
+Return the prefix sum from index 0 to the target index.
+
+Example
+
+Sorted = [1,2,3,7,8,9]
+
+Target Index = 3
+
+Prefix Sum = 1+2+3+7 = 13
+🟢 HackerRank Revision Challenge 2 ⭐⭐⭐
+Topics
+Factorial
+Palindrome
+Hashing
+Problem
+word = "level"
+Task
+Check if the word is a palindrome.
+If it is not, return "Not Palindrome".
+If it is:
+Build a frequency dictionary.
+Count how many characters appear exactly once.
+Return the factorial of that count.
+
+Example
+
+word = "level"
+
+Frequency
+
+l : 2
+e : 2
+v : 1
+
+Unique Count = 1
+
+Factorial(1) = 1
+📘 New Topic
+Linked List – Delete First Node
+Observation
+
+We need to remove the first node.
+
+Current list
+
+Head
+ ↓
+10 → 20 → 30 → 40 → None
+
+Expected
+
+Head
+ ↓
+20 → 30 → 40 → None
+Draw It
+
+Before
+
+Head
+ |
+ v
+10 → 20 → 30 → 40 → None
+
+After
+
+      10 → 20 → 30 → 40 → None
+           ^
+           |
+         Head
+
+Notice something?
+
+No .next pointer changed.
+
+Only
+
+head
+
+moves.
+
+That is why deletion from the beginning is
+
+O(1)
+Pointer(s) Changed
+
+Only
+
+head
+Algorithm
+Check if the list is empty.
+If empty, return.
+Otherwise:
+head = head.next
+
+Done.
+
+Time Complexity
+O(1)
+Space Complexity
+O(1)
+📝 Practice Questions
+Q1
+
+Delete the first node.
+
+5 → 10 → 15 → None
+
+Print the list.
+
+Q2
+
+Delete the first node.
+
+100 → None
+
+What does the list become?
+
+Q3
+
+Delete the first node.
+
+8 → 12 → 16 → 20
+
+Count the remaining nodes.
+
+Q4
+
+Delete the first node.
+
+9 → 3 → 11 → 6
+
+Find the maximum value.
+
+Q5
+
+Delete the first node.
+
+2 → 4 → 6 → 8 → 10
+
+Find the sum of all remaining nodes.
+
+🌟 LeetCode of the Day
+LeetCode #203 – Remove Linked List Elements
+
+Difficulty: Easy
+
+Problem
+
+Given
+
+1 → 2 → 6 → 3 → 4 → 5 → 6
+
+Remove every node whose value is
+
+6
+
+Output
+
+1 → 2 → 3 → 4 → 5
+Your Task (No Code Yet)
+
+Write:
+
+Observation
+
+What is the question asking?
+
+Pattern
+
+Which Linked List concept does it resemble?
+
+Brute Force
+
+How would you solve it with the concepts you currently know?
+
+Don't worry about the optimal solution yet.
+
+🎤 Interview Question
+
+Which operation is faster?
+
+Insert at Beginning
+
+or
+
+Delete First Node
+
+or
+
+Do they have the same complexity?
+
+Explain why.
+
+🧠 Brainstorming Challenge
+
+Suppose you have
+
+10 → 20 → 30 → 40
+
+Delete the node whose value is
+
+30
+
+Without writing code, answer:
+
+Which node do you search for?
+Which .next pointer changes?
+Which node becomes unreachable?
+⭐ Special Challenge (New)
+
+Every day from now on, I want you to answer one extra question after coding:
+
+If I changed one pointer incorrectly, what bug would happen?
+
+For example, after deleting the first node:
+
+head = head.next
+
+Ask yourself:
+
+"What if I accidentally wrote head = None?"
+
+Thinking about incorrect pointer changes will make you much better at debugging linked list problems, which is a skill interviewers value a lot.

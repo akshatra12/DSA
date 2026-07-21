@@ -1,0 +1,29 @@
+⭐ Special Challenge (New)
+
+Every day from now on, I want you to answer one extra question after coding:
+
+If I changed one pointer incorrectly, what bug would happen?
+
+For example, after deleting the first node:
+
+head = head.next
+
+Ask yourself:
+
+"What if I accidentally wrote head = None?"
+
+answer:
+it means head points to the None and if we traverse the linked list it will be empty
+If
+
+head = None
+
+Then
+
+Head
+
+points nowhere.
+
+The list still exists in memory,
+
+but nothing can reach it.

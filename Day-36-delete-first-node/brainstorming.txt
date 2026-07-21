@@ -1,0 +1,21 @@
+🧠 Brainstorming Challenge
+
+Suppose you have
+
+10 → 20 → 30 → 40
+
+Delete the node whose value is
+
+30
+
+Without writing code, answer:
+
+Which node do you search for?
+Which .next pointer changes?
+Which node becomes unreachable?
+
+
+answer:
+1. 20
+2.20.next pointer 
+3.30

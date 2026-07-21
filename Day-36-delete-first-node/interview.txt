@@ -1,0 +1,20 @@
+🎤 Interview Question
+
+Which operation is faster?
+
+Insert at Beginning
+
+or
+
+Delete First Node
+
+or
+
+Do they have the same complexity?
+
+Explain why.
+
+answer:
+both have the same complexity
+if we insert first node only one node shifted so the complexity is O(1)
+if we delete the first node head shift to next node so the complexity is O(1)
