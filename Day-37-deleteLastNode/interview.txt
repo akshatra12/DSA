@@ -1,0 +1,15 @@
+🎤 Interview Question
+
+Which deletion is faster?
+
+Delete First
+
+OR
+
+Delete Last
+
+Explain why.
+
+answer:
+deleting first node is faster because when we delete first node we do'nt need to traverse the list so the complexity is O(1)
+when we delete last node so we need to traverse the array and so the complexity is O(n)

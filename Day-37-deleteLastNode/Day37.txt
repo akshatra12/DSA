@@ -1,0 +1,244 @@
+Day 37
+🟢 HackerRank Revision 1 ⭐⭐
+Topics
+Insertion Sort
+Binary Search
+Recursion (Power)
+Problem
+arr = [12,5,8,1,15,10]
+target = 10
+Task
+Sort the array using Insertion Sort.
+Find the index of 10 using Binary Search.
+Return 2^index using Recursion.
+Expected Thinking
+Insertion Sort
+        ↓
+Binary Search
+        ↓
+Power (Recursion)
+🟢 HackerRank Revision 2 ⭐⭐⭐
+Topics
+Sliding Window
+Hashing
+Prefix Sum
+Problem
+arr = [4,2,7,3,6,1,8,5]
+k = 3
+Task
+Find the window having the maximum sum.
+Check whether that window contains duplicate elements.
+Build a prefix sum array.
+Return the sum of indices 2 to 6.
+Expected Thinking
+Sliding Window
+        ↓
+Hashing
+        ↓
+Prefix Sum
+📘 New Topic
+Linked List — Delete Last Node
+
+Today you'll learn your first interview-level pointer manipulation.
+
+Observation
+
+Delete the last node.
+
+Before
+
+Head
+ ↓
+10 → 20 → 30 → 40 → None
+
+After
+
+Head
+ ↓
+10 → 20 → 30 → None
+Important Question
+
+Do we search for 40?
+
+No.
+
+Exactly like yesterday,
+
+we search for the node before it.
+
+10 → 20 → 30 → 40
+              ↑
+           current
+
+When
+
+current.next.next == None
+
+you know
+
+current
+
+is standing at the second last node.
+
+Then
+
+current.next = None
+
+Done.
+
+Visualization
+10 →20→30→40→None
+          ↑
+      current
+
+Change only
+
+30.next
+
+from
+
+40
+
+to
+
+None
+
+Now
+
+40
+
+becomes unreachable.
+
+Algorithm
+if list empty
+    return
+
+if only one node
+    head = None
+
+else
+
+move until
+
+current.next.next == None
+
+current.next = None
+Time Complexity
+O(n)
+Space Complexity
+O(1)
+📝 Practice Questions
+Q1
+
+Delete the last node.
+
+5 →10→15→20
+
+Print the list.
+
+Q2
+
+Delete the last node.
+
+100
+
+(single node)
+
+Print the list.
+
+Q3
+
+Delete the last node.
+
+8→12→16→20→24
+
+Count remaining nodes.
+
+Q4
+
+Delete the last node.
+
+3→7→2→11
+
+Find maximum.
+
+Q5
+
+Delete the last node.
+
+1→2→3→4→5
+
+Find sum.
+
+🌟 LeetCode of the Day
+LeetCode #83 — Remove Duplicates from Sorted List
+
+Difficulty:
+
+🟢 Easy
+
+Problem
+1→1→2→3→3
+
+Output
+
+1→2→3
+Don't code.
+
+Only answer:
+
+Observation
+
+What is the question asking?
+
+Pattern
+
+Which Linked List concept do you think is required?
+
+Brute Force
+
+How would you solve it with the concepts you know today?
+
+Don't worry about the optimal solution.
+
+🎤 Interview Question
+
+Which deletion is faster?
+
+Delete First
+
+OR
+
+Delete Last
+
+Explain why.
+
+🧠 Brainstorming Challenge ⭐⭐⭐
+
+Suppose
+
+10→20→30→40→50
+
+Delete
+
+40
+
+Answer only:
+
+Which node do you search for?
+Which .next changes?
+Which node becomes unreachable?
+⭐ Pointer Bug Challenge
+
+Suppose your code accidentally does
+
+current = None
+
+instead of
+
+current.next = None
+
+Answer:
+
+Does the linked list change?
+What will happen if you print the list from head afterward?

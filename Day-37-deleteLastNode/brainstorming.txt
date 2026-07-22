@@ -1,0 +1,20 @@
+🧠 Brainstorming Challenge ⭐⭐⭐
+
+Suppose
+
+10→20→30→40→50
+
+Delete
+
+40
+
+Answer only:
+
+Which node do you search for?
+Which .next changes?
+Which node becomes unreachable?
+
+answer:
+1. 30
+2. 30.next
+3. 40
