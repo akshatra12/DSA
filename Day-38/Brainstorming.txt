@@ -1,0 +1,33 @@
+🧠 Brainstorming Challenge ⭐⭐⭐
+10 → 20 → 30 → 40
+
+Insert
+
+25
+
+after
+
+20
+
+Answer only:
+
+Q1
+
+Which node do you search for?
+
+Q2
+
+Which .next pointer changes first?
+
+Q3
+
+Why can't we change
+
+20.next
+
+first?
+
+answer:
+1. 20
+2. 25.next
+3. if we change 20.next first then 30 becomes unreachable

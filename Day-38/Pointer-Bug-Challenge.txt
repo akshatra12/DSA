@@ -1,0 +1,33 @@
+⭐ Pointer Bug Challenge
+10 → 20 → 30 → 40
+Insert
+
+25
+
+after
+
+20
+
+Suppose you accidentally write
+
+current.next = new_node
+
+new_node.next = current.next
+
+instead of
+
+new_node.next = current.next
+
+current.next = new_node
+
+Answer:
+
+Which node becomes unreachable?
+Draw the incorrect linked list.
+
+answer:
+1. 30 becomes unreachable
+2. 10->20->25->
+            | |
+            __|
+That is a self-loop.

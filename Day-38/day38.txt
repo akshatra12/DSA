@@ -1,0 +1,282 @@
+Day 38
+🟢 HackerRank Revision 1 ⭐⭐
+Topics
+Bubble Sort
+Binary Search
+Recursion (Factorial)
+Problem
+arr = [11,4,8,2,15,6]
+target = 8
+Task
+Sort the array using Bubble Sort.
+Find the index of 8 using Recursive Binary Search.
+Return the factorial of the index.
+Expected Pattern
+Bubble Sort
+      ↓
+Binary Search
+      ↓
+Factorial
+🟢 HackerRank Revision 2 ⭐⭐⭐
+Topics
+Sliding Window
+Two Pointers
+Hashing
+Problem
+arr = [3,7,3,2,8,5,8]
+k = 4
+Task
+Find the maximum sum window.
+Check whether the best window contains a palindrome.
+If it is a palindrome,
+return the first duplicate element.
+Otherwise return "Not Palindrome".
+Hint
+
+Think carefully.
+
+The palindrome is not the whole array.
+
+It is only the best window.
+
+📘 New Topic
+Linked List — Insert After a Given Node
+Observation
+
+Given
+
+10 → 20 → 30 → 40
+
+Insert
+
+25
+
+after
+
+20
+
+Expected
+
+10 → 20 → 25 → 30 → 40
+Visualization
+
+Initially
+
+20
+ ↓
+30
+
+New node
+
+25
+ ↓
+None
+Step 1
+
+Connect
+
+25
+
+to
+
+30
+25 → 30
+Step 2
+
+Connect
+
+20
+
+to
+
+25
+
+Final
+
+20 → 25 → 30
+⚠️ Order Matters
+
+Never do
+
+current.next = new_node
+
+first.
+
+Otherwise
+
+30
+
+will be lost.
+
+Always
+
+new_node.next = current.next
+
+current.next = new_node
+Algorithm
+Find target node
+
+Create new node
+
+new_node.next = current.next
+
+current.next = new_node
+Time Complexity
+O(n)
+Space Complexity
+O(1)
+📝 Practice Questions
+Q1
+
+Insert
+
+15
+
+after
+
+10
+5 → 10 → 20 → 30
+
+Print the list.
+
+Q2
+
+Insert
+
+50
+
+after
+
+40
+10 → 20 → 30 → 40
+
+Print the list.
+
+Q3
+
+Insert
+
+18
+
+after
+
+12
+8 → 12 → 16 → 20
+
+Count nodes.
+
+Q4
+
+Insert
+
+6
+
+after
+
+5
+2 → 5 → 8 → 10
+
+Find maximum.
+
+Q5
+
+Insert
+
+9
+
+after
+
+8
+2 → 4 → 6 → 8 → 10
+
+Find the sum.
+
+🌟 LeetCode of the Day
+LeetCode #141 — Linked List Cycle
+
+Difficulty: 🟢 Easy
+
+Problem
+
+Given a linked list,
+
+determine whether the linked list contains a cycle.
+
+Example
+
+1 → 2 → 3 → 4
+      ↑     ↓
+      ← ← ←
+
+Return
+
+True
+Don't code.
+
+Write only:
+
+Observation
+Pattern
+Brute Force
+
+How would you detect a cycle using the concepts you currently know?
+
+🎤 Interview Question
+
+Which operation is easier?
+
+Insert at Beginning
+
+OR
+
+Insert After a Given Node
+
+Explain why.
+
+🧠 Brainstorming Challenge ⭐⭐⭐
+10 → 20 → 30 → 40
+
+Insert
+
+25
+
+after
+
+20
+
+Answer only:
+
+Q1
+
+Which node do you search for?
+
+Q2
+
+Which .next pointer changes first?
+
+Q3
+
+Why can't we change
+
+20.next
+
+first?
+
+⭐ Pointer Bug Challenge
+
+Suppose you accidentally write
+
+current.next = new_node
+
+new_node.next = current.next
+
+instead of
+
+new_node.next = current.next
+
+current.next = new_node
+
+Answer:
+
+Which node becomes unreachable?
+Draw the incorrect linked list.

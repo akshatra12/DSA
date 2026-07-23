@@ -1,0 +1,15 @@
+🎤 Interview Question
+
+Which operation is easier?
+
+Insert at Beginning
+
+OR
+
+Insert After a Given Node
+
+Explain why.
+
+answer:
+insert at beginning is easy because we don't need to traverse the linked list
+
